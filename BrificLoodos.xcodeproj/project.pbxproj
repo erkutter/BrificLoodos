@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F3D2A78300F003DF923 /* AppDelegate.swift */; };
 		9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F3F2A78300F003DF923 /* SceneDelegate.swift */; };
-		9A4E6F472A783013003DF923 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F462A783013003DF923 /* Assets.xcassets */; };
 		9A4E6F4A2A783013003DF923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F482A783013003DF923 /* LaunchScreen.storyboard */; };
 		9A4E6F672A783D52003DF923 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F652A783D52003DF923 /* HomeViewController.swift */; };
 		9A4E6F682A783D52003DF923 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F662A783D52003DF923 /* HomeViewController.xib */; };
@@ -23,13 +22,13 @@
 		9A4E6F782A783D83003DF923 /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F762A783D83003DF923 /* SocialViewController.xib */; };
 		9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */; };
 		9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */; };
+		9A9D896C2A79A46700C69BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D896B2A79A46700C69BD8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9A4E6F3A2A78300F003DF923 /* BrificLoodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrificLoodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4E6F3D2A78300F003DF923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A4E6F3F2A78300F003DF923 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A4E6F462A783013003DF923 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A4E6F492A783013003DF923 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A4E6F4B2A783013003DF923 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A4E6F652A783D52003DF923 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		9A4E6F762A783D83003DF923 /* SocialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
 		9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabBar.swift; path = ../../../../../../.Trash/CustomTabBar.swift; sourceTree = "<group>"; };
 		9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		9A9D896B2A79A46700C69BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,7 +159,7 @@
 		9A4E6F5E2A7836CC003DF923 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				9A4E6F462A783013003DF923 /* Assets.xcassets */,
+				9A9D896B2A79A46700C69BD8 /* Assets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -247,8 +247,8 @@
 				9A4E6F4A2A783013003DF923 /* LaunchScreen.storyboard in Resources */,
 				9A4E6F6C2A783D5D003DF923 /* MarketViewController.xib in Resources */,
 				9A4E6F782A783D83003DF923 /* SocialViewController.xib in Resources */,
+				9A9D896C2A79A46700C69BD8 /* Assets.xcassets in Resources */,
 				9A4E6F742A783D76003DF923 /* MapViewController.xib in Resources */,
-				9A4E6F472A783013003DF923 /* Assets.xcassets in Resources */,
 				9A4E6F682A783D52003DF923 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
