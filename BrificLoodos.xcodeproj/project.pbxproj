@@ -25,6 +25,9 @@
 		9A9D896C2A79A46700C69BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D896B2A79A46700C69BD8 /* Assets.xcassets */; };
 		9A9D89722A79B0CA00C69BD8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89702A79B0CA00C69BD8 /* CustomTableViewCell.swift */; };
 		9A9D89732A79B0CA00C69BD8 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D89712A79B0CA00C69BD8 /* CustomTableViewCell.xib */; };
+		9A9D897E2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D897D2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf */; };
+		9A9D89802A7AE0E500C69BD8 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D897F2A7AE0E500C69BD8 /* Poppins-Medium.ttf */; };
+		9A9D89822A7AE25100C69BD8 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D89812A7AE25100C69BD8 /* Poppins-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		9A9D896B2A79A46700C69BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		9A9D89702A79B0CA00C69BD8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9A9D89712A79B0CA00C69BD8 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		9A9D897D2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		9A9D897F2A7AE0E500C69BD8 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		9A9D89812A7AE25100C69BD8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +170,9 @@
 		9A4E6F5E2A7836CC003DF923 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				9A9D89812A7AE25100C69BD8 /* Poppins-Regular.ttf */,
+				9A9D897F2A7AE0E500C69BD8 /* Poppins-Medium.ttf */,
+				9A9D897D2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf */,
 				9A9D896B2A79A46700C69BD8 /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -172,9 +181,9 @@
 		9A4E6F642A7838F1003DF923 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9A4E6F5B2A7836A4003DF923 /* Profile */,
 				9A4E6F592A783672003DF923 /* Social */,
 				9A4E6F5A2A783674003DF923 /* Map */,
-				9A4E6F5B2A7836A4003DF923 /* Profile */,
 				9A4E6F5C2A7836AB003DF923 /* Market */,
 				9A4E6F582A783664003DF923 /* Home */,
 			);
@@ -263,8 +272,11 @@
 				9A4E6F782A783D83003DF923 /* SocialViewController.xib in Resources */,
 				9A9D896C2A79A46700C69BD8 /* Assets.xcassets in Resources */,
 				9A4E6F742A783D76003DF923 /* MapViewController.xib in Resources */,
+				9A9D897E2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf in Resources */,
 				9A9D89732A79B0CA00C69BD8 /* CustomTableViewCell.xib in Resources */,
+				9A9D89822A7AE25100C69BD8 /* Poppins-Regular.ttf in Resources */,
 				9A4E6F682A783D52003DF923 /* HomeViewController.xib in Resources */,
+				9A9D89802A7AE0E500C69BD8 /* Poppins-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

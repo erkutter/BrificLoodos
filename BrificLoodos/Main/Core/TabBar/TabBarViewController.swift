@@ -35,14 +35,13 @@ class TabBarController: UITabBarController {
             
         }
         //tab bar properties
-        tabBar.layer.cornerRadius = 24
-        tabBar.layer.cornerRadius = 24
+        tabBar.layer.cornerRadius = 20
         tabBar.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         tabBar.layer.shadowOpacity = 1
         tabBar.layer.shadowOffset = CGSize(width: 0, height: -4)
         tabBar.layer.shadowRadius = 40
         tabBar.tintColor = UIColor(red: 0.04, green: 0.24, blue: 1, alpha: 1)
         tabBar.unselectedItemTintColor = .black
-                
+        
     }
 }
