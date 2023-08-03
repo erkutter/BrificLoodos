@@ -25,7 +25,7 @@ class TabBarController: UITabBarController {
         let marketVC = MarketViewController()
         marketVC.tabBarItem = UITabBarItem.init(title: "", image: UIImage(named: "cart"), tag: 3)
         
-        let profileVC = ProfileViewController()
+        let profileVC = ProfileViiewController()
         profileVC.tabBarItem = UITabBarItem.init(title: "", image: UIImage(named: "user"), tag: 4)
         
         let controllers = [homeVC,socialVC,mapVC,marketVC,profileVC]

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class ProfileViiewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var profileContainerView: UIView!
     
@@ -65,6 +65,12 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     }
     
     
+    @IBAction func editProfileTapped(_ sender: UIButton) {
+        let editProfileViewController = EditProfileViewController(nibName: "EditProfileViewController", bundle: nil)
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.pushViewController(editProfileViewController, animated: true)
+        
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return cellLabels.count

@@ -14,8 +14,8 @@
 		9A4E6F682A783D52003DF923 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F662A783D52003DF923 /* HomeViewController.xib */; };
 		9A4E6F6B2A783D5D003DF923 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F692A783D5D003DF923 /* MarketViewController.swift */; };
 		9A4E6F6C2A783D5D003DF923 /* MarketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F6A2A783D5D003DF923 /* MarketViewController.xib */; };
-		9A4E6F6F2A783D6A003DF923 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F6D2A783D69003DF923 /* ProfileViewController.swift */; };
-		9A4E6F702A783D6A003DF923 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F6E2A783D6A003DF923 /* ProfileViewController.xib */; };
+		9A4E6F6F2A783D6A003DF923 /* ProfileViiewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F6D2A783D69003DF923 /* ProfileViiewController.swift */; };
+		9A4E6F702A783D6A003DF923 /* ProfileViiewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F6E2A783D6A003DF923 /* ProfileViiewController.xib */; };
 		9A4E6F732A783D76003DF923 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F712A783D76003DF923 /* MapViewController.swift */; };
 		9A4E6F742A783D76003DF923 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F722A783D76003DF923 /* MapViewController.xib */; };
 		9A4E6F772A783D83003DF923 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F752A783D83003DF923 /* SocialViewController.swift */; };
@@ -28,6 +28,8 @@
 		9A9D897E2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D897D2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf */; };
 		9A9D89802A7AE0E500C69BD8 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D897F2A7AE0E500C69BD8 /* Poppins-Medium.ttf */; };
 		9A9D89822A7AE25100C69BD8 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D89812A7AE25100C69BD8 /* Poppins-Regular.ttf */; };
+		9A9D89892A7B870D00C69BD8 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89872A7B870D00C69BD8 /* EditProfileViewController.swift */; };
+		9A9D898A2A7B870D00C69BD8 /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D89882A7B870D00C69BD8 /* EditProfileViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +42,8 @@
 		9A4E6F662A783D52003DF923 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		9A4E6F692A783D5D003DF923 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		9A4E6F6A2A783D5D003DF923 /* MarketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketViewController.xib; sourceTree = "<group>"; };
-		9A4E6F6D2A783D69003DF923 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		9A4E6F6E2A783D6A003DF923 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		9A4E6F6D2A783D69003DF923 /* ProfileViiewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViiewController.swift; sourceTree = "<group>"; };
+		9A4E6F6E2A783D6A003DF923 /* ProfileViiewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViiewController.xib; sourceTree = "<group>"; };
 		9A4E6F712A783D76003DF923 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		9A4E6F722A783D76003DF923 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		9A4E6F752A783D83003DF923 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,8 @@
 		9A9D897D2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
 		9A9D897F2A7AE0E500C69BD8 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
 		9A9D89812A7AE25100C69BD8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		9A9D89872A7B870D00C69BD8 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		9A9D89882A7B870D00C69BD8 /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +147,8 @@
 		9A4E6F5B2A7836A4003DF923 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				9A4E6F6D2A783D69003DF923 /* ProfileViewController.swift */,
-				9A4E6F6E2A783D6A003DF923 /* ProfileViewController.xib */,
+				9A9D89842A7B86DA00C69BD8 /* EditProfile */,
+				9A9D89832A7B86CD00C69BD8 /* MainProfile */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -208,6 +212,24 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		9A9D89832A7B86CD00C69BD8 /* MainProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9A4E6F6D2A783D69003DF923 /* ProfileViiewController.swift */,
+				9A4E6F6E2A783D6A003DF923 /* ProfileViiewController.xib */,
+			);
+			path = MainProfile;
+			sourceTree = "<group>";
+		};
+		9A9D89842A7B86DA00C69BD8 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9A9D89872A7B870D00C69BD8 /* EditProfileViewController.swift */,
+				9A9D89882A7B870D00C69BD8 /* EditProfileViewController.xib */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -266,7 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4E6F702A783D6A003DF923 /* ProfileViewController.xib in Resources */,
+				9A4E6F702A783D6A003DF923 /* ProfileViiewController.xib in Resources */,
 				9A4E6F4A2A783013003DF923 /* LaunchScreen.storyboard in Resources */,
 				9A4E6F6C2A783D5D003DF923 /* MarketViewController.xib in Resources */,
 				9A4E6F782A783D83003DF923 /* SocialViewController.xib in Resources */,
@@ -274,6 +296,7 @@
 				9A4E6F742A783D76003DF923 /* MapViewController.xib in Resources */,
 				9A9D897E2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf in Resources */,
 				9A9D89732A79B0CA00C69BD8 /* CustomTableViewCell.xib in Resources */,
+				9A9D898A2A7B870D00C69BD8 /* EditProfileViewController.xib in Resources */,
 				9A9D89822A7AE25100C69BD8 /* Poppins-Regular.ttf in Resources */,
 				9A4E6F682A783D52003DF923 /* HomeViewController.xib in Resources */,
 				9A9D89802A7AE0E500C69BD8 /* Poppins-Medium.ttf in Resources */,
@@ -287,7 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4E6F6F2A783D6A003DF923 /* ProfileViewController.swift in Sources */,
+				9A9D89892A7B870D00C69BD8 /* EditProfileViewController.swift in Sources */,
+				9A4E6F6F2A783D6A003DF923 /* ProfileViiewController.swift in Sources */,
 				9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */,
 				9A4E6F6B2A783D5D003DF923 /* MarketViewController.swift in Sources */,
 				9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */,

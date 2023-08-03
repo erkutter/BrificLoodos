@@ -40,6 +40,9 @@
                     <state key="normal" title="Edit Profile">
                         <color key="titleColor" red="0.56470588235294117" green="0.56862745098039214" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="editProfileTapped:" destination="-1" eventType="touchUpInside" id="fjl-UX-7UV"/>
+                    </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIe-AN-qzz">
                     <rect key="frame" x="16" y="241.66666666666663" width="361" height="320"/>
