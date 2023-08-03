@@ -34,7 +34,7 @@ class TabBarController: UITabBarController {
             UINavigationController(rootViewController: $0)
             
         }
-        //tab bar properties
+//        tab bar properties
         tabBar.layer.cornerRadius = 20
         tabBar.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         tabBar.layer.shadowOpacity = 1

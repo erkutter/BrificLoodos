@@ -11,13 +11,14 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var profileContainerView: UIView!
     
+    @IBOutlet weak var userImageContainer: UIView!
+    
     @IBOutlet weak var profileTableView: UITableView!
     
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var editProfileButton: UIButton!
     
-    @IBOutlet weak var logOutContainerView: UIView!
     
     @IBOutlet weak var logOutButton: UIButton!
     
@@ -31,6 +32,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(self.view.frame)
         self.navigationController?.isNavigationBarHidden = true
         view.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
         
@@ -43,7 +45,8 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         
         profileTableView.delegate = self
         
-        
+        //user image
+        userImageContainer.layer.cornerRadius = userImageContainer.frame.width / 2
         let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
         profileTableView.register(nib, forCellReuseIdentifier: cellIdentifier)
         //tableViewCustomization
@@ -52,7 +55,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         profileTableView.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
         profileTableView.rowHeight = UITableView.automaticDimension
         //logout button container
-        logOutContainerView.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
+        
         //logout button
         logOutButton.layer.cornerRadius = 12
         logOutButton.layer.borderWidth = 1
@@ -61,10 +64,13 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         logOutButton.layer.shadowOpacity = 1
         logOutButton.layer.shadowRadius = 20
         logOutButton.layer.shadowOffset = CGSize(width: 0, height: 4)
+    
         
     }
     
-    
+    override func viewDidLayoutSubviews() {
+        print(self.view.frame)
+    }
     @IBAction func editProfileTapped(_ sender: UIButton) {
         let editProfileViewController = EditProfileViewController(nibName: "EditProfileViewController", bundle: nil)
         self.navigationController?.isNavigationBarHidden = false
@@ -112,5 +118,18 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(IndexPath.self)
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.navigationController?.isNavigationBarHidden = true
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        self.navigationController?.isNavigationBarHidden = false
+    }
+
     
 }

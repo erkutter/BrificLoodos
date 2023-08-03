@@ -18,22 +18,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHR-ht-YP0">
-                    <rect key="frame" x="175" y="416" width="53" height="24"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="qHR-ht-YP0" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="357" id="50P-ml-boN"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qHR-ht-YP0" secondAttribute="trailing" constant="165" id="B62-KR-lWe"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qHR-ht-YP0" secondAttribute="bottom" constant="378" id="Spe-tQ-lxG"/>
-                <constraint firstItem="qHR-ht-YP0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="175" id="p4v-7Y-xiz"/>
-            </constraints>
             <point key="canvasLocation" x="71" y="-11"/>
         </view>
     </objects>
