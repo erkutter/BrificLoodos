@@ -21,7 +21,8 @@ class CustomTableViewCell: UITableViewCell {
         // Initialization code
         cellLabel.font = UIFont(name: "Poppins-Medium", size: 14)
         imageContainerView.layer.cornerRadius = 6
-        
+        //
+      
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {

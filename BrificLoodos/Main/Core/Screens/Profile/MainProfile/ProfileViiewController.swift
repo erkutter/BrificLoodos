@@ -110,7 +110,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         cell.layer.shadowColor = UIColor(red: 0.114, green: 0.133, blue: 0.18, alpha: 0.1).cgColor
         cell.layer.shadowOpacity = 1
         cell.layer.shadowOffset = CGSize(width: 0, height: 4)
-        cell.layer.shadowRadius = 20
+        cell.layer.shadowRadius = 10
         
         return cell
     }

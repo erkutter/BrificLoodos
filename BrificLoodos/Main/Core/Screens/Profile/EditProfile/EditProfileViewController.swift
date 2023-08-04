@@ -10,8 +10,13 @@ import UIKit
 class EditProfileViewController: UIViewController {
 
     
+    @IBOutlet weak var propsScroll: UIScrollView!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        
 //        profileContainerView.layer.cornerRadius = profileContainerView.frame.width / 2
 //        view.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
 //
