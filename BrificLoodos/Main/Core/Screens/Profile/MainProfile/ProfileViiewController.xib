@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="BrificLoodos" customModuleProvider="target">
             <connections>
+                <outlet property="dummyImage" destination="86s-GZ-K92" id="i1j-LF-wHd"/>
                 <outlet property="editProfileButton" destination="iyC-5y-fRh" id="9JH-bC-aY6"/>
                 <outlet property="logOutButton" destination="Sfg-J1-vA8" id="ikX-Zm-G25"/>
                 <outlet property="nameLabel" destination="slg-bx-ubm" id="hdZ-cx-2iL"/>

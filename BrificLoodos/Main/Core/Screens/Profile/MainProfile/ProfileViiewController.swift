@@ -19,6 +19,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     
     @IBOutlet weak var editProfileButton: UIButton!
     
+    @IBOutlet weak var dummyImage: UIImageView!
     
     @IBOutlet weak var logOutButton: UIButton!
     
@@ -34,6 +35,9 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         print(self.view.frame)
         self.navigationController?.isNavigationBarHidden = true
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(
+               title: "Edit Profile", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
         view.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
         
         nameLabel.font = UIFont(name: "Poppins-Semibold", size: 16)
@@ -64,7 +68,8 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         logOutButton.layer.shadowOpacity = 1
         logOutButton.layer.shadowRadius = 20
         logOutButton.layer.shadowOffset = CGSize(width: 0, height: 4)
-    
+        dummyImage.layer.cornerRadius = dummyImage.frame.size.width / 2
+            dummyImage.clipsToBounds = true
         
     }
     
@@ -123,6 +128,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         super.viewWillAppear(animated)
 
         self.navigationController?.isNavigationBarHidden = true
+        
     }
 
     override func viewWillDisappear(_ animated: Bool) {
