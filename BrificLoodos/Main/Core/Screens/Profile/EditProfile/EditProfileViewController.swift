@@ -152,6 +152,7 @@ class EditProfileViewController: UIViewController {
     }
     
     func getUserInfo() {
+        var segment: Int = 0
         indicator.startAnimating()
         indicator.color = .red
         indicator.center = view.center
@@ -160,10 +161,15 @@ class EditProfileViewController: UIViewController {
         UserService().fetchUserData { [weak self] result in
             switch result {
             case .success(let userData):
+                if userData.gender == "FEMALE" {
+                    segment = 1
+                }
                 DispatchQueue.main.async {
                     self?.name.text = userData.name
                     self?.surname.text = userData.surname
                     self?.mobilePhone.text = userData.phoneNumber
+                    self?.genderControl.selectedSegmentIndex = segment
+                    self?.dateOfBirth.text = userData.birthday
                     self?.eMail.text = userData.email
                     self?.userNameLabel.text = userData.name+" "+userData.surname
                 }
@@ -175,6 +181,7 @@ class EditProfileViewController: UIViewController {
             }
         }
     }
+    
     func showAlertWithMessage(_ message: String) {
         let alertController = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
@@ -184,18 +191,23 @@ class EditProfileViewController: UIViewController {
     }
     
     func setUserInfo(){
+        
         indicator.startAnimating()
         indicator.color = .red
         indicator.center = view.center
         indicator.backgroundColor = .black
+        
         guard let nameText = name.text, !nameText.isEmpty,
+              let birthText = dateOfBirth.text, !birthText.isEmpty,
               let surnameText = surname.text, !surnameText.isEmpty,
+              let genderSegment = genderControl.titleForSegment(at: genderControl.selectedSegmentIndex)?.uppercased(),
               let emailText = eMail.text, !emailText.isEmpty
         else {
             print("Please fill in all required fields.")
             return
         }
-        UserService().updateUserData(name: nameText, surname: surnameText, email: emailText) { [weak self] success, errorMessage in
+        
+        UserService().updateUserData(name: nameText, surname: surnameText, gender: genderSegment, birthday: birthText, email: emailText) { [weak self] success, errorMessage in
             DispatchQueue.main.async {
                 if success {
                     self?.showAlertWithMessage("User information updated")

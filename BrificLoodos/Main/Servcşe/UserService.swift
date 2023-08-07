@@ -15,14 +15,16 @@ struct UserData: Codable {
         let name: String
         let surname: String
         let phoneNumber: String
+        let gender: String
         let email: String
+        let birthday: String
     }
 }
 
 class UserService {
     func fetchUserData(completion: @escaping (Result<UserData.Payload, Error>) -> Void) {
         Constants().saveToken()
-        let URL = "https://api-dev.brific.com/api/v1/cdh/customer"
+        let URL = "https://api-dev.brific.com/api/v1/cdh/customer/profile"
         if let savedToken = UserDefaults.standard.string(forKey: "token") {
             let headers: HTTPHeaders = ["Authorization": "Bearer \(savedToken)"]
             AF.request(URL, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers, interceptor: nil)
@@ -31,6 +33,7 @@ class UserService {
                     case .success(let data):
                         do {
                             let decodedData = try JSONDecoder().decode(UserData.self, from: data)
+                            print(decodedData)
                             completion(.success(decodedData.payload))
                         } catch {
                             print("\(error)")
@@ -44,11 +47,13 @@ class UserService {
         }
     }
     
-    func updateUserData(name:String, surname:String, email: String,completion: @escaping (Bool, String?) -> Void){
+    func updateUserData(name:String, surname:String, gender: String, birthday: String, email: String,completion: @escaping (Bool, String?) -> Void){
         Constants().saveToken()
         let params: Parameters = [
             "name": name,
             "surname": surname,
+            "gender": gender,
+            "birthday": birthday,
             "email": email
         ]
         let URL = "https://api-dev.brific.com/api/v1/cdh/customer"
