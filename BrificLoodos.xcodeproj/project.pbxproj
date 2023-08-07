@@ -23,6 +23,7 @@
 		9A4E6F782A783D83003DF923 /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F762A783D83003DF923 /* SocialViewController.xib */; };
 		9A7003FE2A80C6BB00FC2094 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7003FD2A80C6BB00FC2094 /* Security.framework */; };
 		9A7004012A80C6FE00FC2094 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004002A80C6FE00FC2094 /* Constants.swift */; };
+		9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */; };
 		9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8C5F3E2A7D3364001E5818 /* UserService.swift */; };
 		9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */; };
 		9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */; };
@@ -57,6 +58,7 @@
 		9A4E6F762A783D83003DF923 /* SocialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
 		9A7003FD2A80C6BB00FC2094 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9A7004002A80C6FE00FC2094 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
 		9A8C5F3E2A7D3364001E5818 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabBar.swift; path = ../../../../../../.Trash/CustomTabBar.swift; sourceTree = "<group>"; };
 		9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 		9A4E6F3C2A78300F003DF923 /* BrificLoodos */ = {
 			isa = PBXGroup;
 			children = (
+				9A7004022A8114ED00FC2094 /* Extension */,
 				9A7003FF2A80C6DE00FC2094 /* Auth */,
 				9A4E6F512A7832F4003DF923 /* Main */,
 				9A4E6F482A783013003DF923 /* LaunchScreen.storyboard */,
@@ -234,6 +237,14 @@
 				9A7004002A80C6FE00FC2094 /* Constants.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		9A7004022A8114ED00FC2094 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		9A8C5F3A2A7D2E3A001E5818 /* Service */ = {
@@ -413,6 +424,7 @@
 				9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */,
 				9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */,
 				9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */,
+				9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */,
 				9A9D89722A79B0CA00C69BD8 /* CustomTableViewCell.swift in Sources */,
 				9A4E6F672A783D52003DF923 /* HomeViewController.swift in Sources */,
 				9A4E6F732A783D76003DF923 /* MapViewController.swift in Sources */,

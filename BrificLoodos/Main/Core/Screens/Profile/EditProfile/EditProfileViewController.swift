@@ -9,7 +9,7 @@ import UIKit
 
 class EditProfileViewController: UIViewController {
     let indicator = UIActivityIndicatorView(style: .large)
-   
+    
     @IBOutlet weak var genderContainer: UIView!
     
     @IBOutlet weak var birthContainer: UIView!
@@ -54,8 +54,10 @@ class EditProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         getUserInfo()
         profileContainerView.layer.cornerRadius = profileContainerView.frame.width / 2
         profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
@@ -110,6 +112,10 @@ class EditProfileViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         self.tabBarController?.tabBar.isHidden = false
+    }
+    
+    @IBAction func saveChangesTapped(_ sender: Any) {
+        setUserInfo()
     }
     
     func labelCustomization(_ label:UILabel) {
@@ -168,6 +174,34 @@ class EditProfileViewController: UIViewController {
                 }
             }
         }
-    } 
+    }
+    func showAlertWithMessage(_ message: String) {
+        let alertController = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+        
+    }
     
+    func setUserInfo(){
+        indicator.startAnimating()
+        indicator.color = .red
+        indicator.center = view.center
+        indicator.backgroundColor = .black
+        guard let nameText = name.text, !nameText.isEmpty,
+              let surnameText = surname.text, !surnameText.isEmpty,
+              let emailText = eMail.text, !emailText.isEmpty
+        else {
+            print("Please fill in all required fields.")
+            return
+        }
+        UserService().updateUserData(name: nameText, surname: surnameText, email: emailText) { [weak self] success, errorMessage in
+            DispatchQueue.main.async {
+                if success {
+                    self?.showAlertWithMessage("User information updated")
+                }
+                self?.getUserInfo()
+            }
+        }
+    }
 }

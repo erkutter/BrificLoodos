@@ -8,7 +8,8 @@
 import UIKit
 
 class ProfileViiewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    let indicator = UIActivityIndicatorView(style: .large)
+
     @IBOutlet weak var profileContainerView: UIView!
     
     @IBOutlet weak var userImageContainer: UIView!
@@ -33,9 +34,14 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        getUserInfo()
         self.navigationController?.isNavigationBarHidden = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(
                title: "Edit Profile", style: .plain, target: nil, action: nil)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) 
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
         self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
         view.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
         
@@ -124,6 +130,8 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        getUserInfo()
+
         super.viewWillAppear(animated)
 
         self.navigationController?.isNavigationBarHidden = true
@@ -131,10 +139,31 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     override func viewWillDisappear(_ animated: Bool) {
+        getUserInfo()
+
         super.viewWillDisappear(animated)
 
         self.navigationController?.isNavigationBarHidden = false
     }
-
+    func getUserInfo() {
+        indicator.startAnimating()
+        indicator.color = .red
+        indicator.center = view.center
+        indicator.backgroundColor = .black
+        view.addSubview(indicator)
+        UserService().fetchUserData { [weak self] result in
+            switch result {
+            case .success(let userData):
+                DispatchQueue.main.async {
+                    self?.nameLabel.text = userData.name+" "+userData.surname
+                }
+                self?.indicator.stopAnimating()
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    print("Error fetching user data: \(error.localizedDescription)")
+                }
+            }
+        }
+    }
     
 }
