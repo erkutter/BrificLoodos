@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B001C22901BE9AEFAB78120 /* Pods_BrificLoodos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEB66091F350C1AD5486BB6 /* Pods_BrificLoodos.framework */; };
 		9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F3D2A78300F003DF923 /* AppDelegate.swift */; };
 		9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F3F2A78300F003DF923 /* SceneDelegate.swift */; };
 		9A4E6F4A2A783013003DF923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F482A783013003DF923 /* LaunchScreen.storyboard */; };
@@ -20,6 +21,9 @@
 		9A4E6F742A783D76003DF923 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F722A783D76003DF923 /* MapViewController.xib */; };
 		9A4E6F772A783D83003DF923 /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F752A783D83003DF923 /* SocialViewController.swift */; };
 		9A4E6F782A783D83003DF923 /* SocialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F762A783D83003DF923 /* SocialViewController.xib */; };
+		9A7003FE2A80C6BB00FC2094 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7003FD2A80C6BB00FC2094 /* Security.framework */; };
+		9A7004012A80C6FE00FC2094 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004002A80C6FE00FC2094 /* Constants.swift */; };
+		9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8C5F3E2A7D3364001E5818 /* UserService.swift */; };
 		9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */; };
 		9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */; };
 		9A9D896C2A79A46700C69BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D896B2A79A46700C69BD8 /* Assets.xcassets */; };
@@ -33,6 +37,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AEB66091F350C1AD5486BB6 /* Pods_BrificLoodos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrificLoodos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		634ED45B926F053455BEF2C0 /* Pods-BrificLoodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrificLoodos.release.xcconfig"; path = "Target Support Files/Pods-BrificLoodos/Pods-BrificLoodos.release.xcconfig"; sourceTree = "<group>"; };
+		7520A6445E3A4981A5ADFB10 /* Pods-BrificLoodos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrificLoodos.debug.xcconfig"; path = "Target Support Files/Pods-BrificLoodos/Pods-BrificLoodos.debug.xcconfig"; sourceTree = "<group>"; };
 		9A4E6F3A2A78300F003DF923 /* BrificLoodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrificLoodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4E6F3D2A78300F003DF923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A4E6F3F2A78300F003DF923 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +55,9 @@
 		9A4E6F722A783D76003DF923 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		9A4E6F752A783D83003DF923 /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		9A4E6F762A783D83003DF923 /* SocialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialViewController.xib; sourceTree = "<group>"; };
+		9A7003FD2A80C6BB00FC2094 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9A7004002A80C6FE00FC2094 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9A8C5F3E2A7D3364001E5818 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabBar.swift; path = ../../../../../../.Trash/CustomTabBar.swift; sourceTree = "<group>"; };
 		9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		9A9D896B2A79A46700C69BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
@@ -65,17 +75,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A7003FE2A80C6BB00FC2094 /* Security.framework in Frameworks */,
+				0B001C22901BE9AEFAB78120 /* Pods_BrificLoodos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17D0985C04BB3EFCB359D89E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7520A6445E3A4981A5ADFB10 /* Pods-BrificLoodos.debug.xcconfig */,
+				634ED45B926F053455BEF2C0 /* Pods-BrificLoodos.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		909FB3625505641043737BCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A7003FD2A80C6BB00FC2094 /* Security.framework */,
+				5AEB66091F350C1AD5486BB6 /* Pods_BrificLoodos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A4E6F312A78300F003DF923 = {
 			isa = PBXGroup;
 			children = (
 				9A4E6F3C2A78300F003DF923 /* BrificLoodos */,
 				9A4E6F3B2A78300F003DF923 /* Products */,
+				17D0985C04BB3EFCB359D89E /* Pods */,
+				909FB3625505641043737BCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +122,7 @@
 		9A4E6F3C2A78300F003DF923 /* BrificLoodos */ = {
 			isa = PBXGroup;
 			children = (
+				9A7003FF2A80C6DE00FC2094 /* Auth */,
 				9A4E6F512A7832F4003DF923 /* Main */,
 				9A4E6F482A783013003DF923 /* LaunchScreen.storyboard */,
 				9A4E6F4B2A783013003DF923 /* Info.plist */,
@@ -100,6 +133,7 @@
 		9A4E6F512A7832F4003DF923 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9A8C5F3A2A7D2E3A001E5818 /* Service */,
 				9A4E6F5E2A7836CC003DF923 /* Assets */,
 				9A4E6F5D2A7836BE003DF923 /* App */,
 				9A4E6F572A78365A003DF923 /* Core */,
@@ -194,6 +228,23 @@
 			path = Screens;
 			sourceTree = "<group>";
 		};
+		9A7003FF2A80C6DE00FC2094 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9A7004002A80C6FE00FC2094 /* Constants.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9A8C5F3A2A7D2E3A001E5818 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9A8C5F3E2A7D3364001E5818 /* UserService.swift */,
+			);
+			name = Service;
+			path = "Servcşe";
+			sourceTree = "<group>";
+		};
 		9A9D895B2A79804E00C69BD8 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A4E6F4E2A783013003DF923 /* Build configuration list for PBXNativeTarget "BrificLoodos" */;
 			buildPhases = (
+				C532D242D04DBA72879DFCA0 /* [CP] Check Pods Manifest.lock */,
 				9A4E6F362A78300F003DF923 /* Sources */,
 				9A4E6F372A78300F003DF923 /* Frameworks */,
 				9A4E6F382A78300F003DF923 /* Resources */,
+				46BA4F0DBB0C7E8599BF9755 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +358,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		46BA4F0DBB0C7E8599BF9755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrificLoodos/Pods-BrificLoodos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrificLoodos/Pods-BrificLoodos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrificLoodos/Pods-BrificLoodos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C532D242D04DBA72879DFCA0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrificLoodos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A4E6F362A78300F003DF923 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,11 +411,13 @@
 				9A4E6F6B2A783D5D003DF923 /* MarketViewController.swift in Sources */,
 				9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */,
 				9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */,
+				9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */,
 				9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */,
 				9A9D89722A79B0CA00C69BD8 /* CustomTableViewCell.swift in Sources */,
 				9A4E6F672A783D52003DF923 /* HomeViewController.swift in Sources */,
 				9A4E6F732A783D76003DF923 /* MapViewController.swift in Sources */,
 				9A4E6F772A783D83003DF923 /* SocialViewController.swift in Sources */,
+				9A7004012A80C6FE00FC2094 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +551,7 @@
 		};
 		9A4E6F4F2A783013003DF923 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7520A6445E3A4981A5ADFB10 /* Pods-BrificLoodos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -486,6 +584,7 @@
 		};
 		9A4E6F502A783013003DF923 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634ED45B926F053455BEF2C0 /* Pods-BrificLoodos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

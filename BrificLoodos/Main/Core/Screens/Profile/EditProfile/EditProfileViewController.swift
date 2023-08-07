@@ -8,8 +8,8 @@
 import UIKit
 
 class EditProfileViewController: UIViewController {
-    
-    
+    let indicator = UIActivityIndicatorView(style: .large)
+   
     @IBOutlet weak var genderContainer: UIView!
     
     @IBOutlet weak var birthContainer: UIView!
@@ -53,11 +53,13 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var genderControl: UISegmentedControl!
     
     @IBOutlet weak var profileImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        getUserInfo()
         profileContainerView.layer.cornerRadius = profileContainerView.frame.width / 2
         profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
-            profileImage.clipsToBounds = true        //backgroundcolor
+        profileImage.clipsToBounds = true        //backgroundcolor
         backgroundColor(view.self)
         backgroundColor(scrollViewContainer)
         backgroundColor(birthContainer)
@@ -77,6 +79,7 @@ class EditProfileViewController: UIViewController {
         textFieldCustomization(name)
         textFieldCustomization(surname)
         textFieldCustomization(mobilePhone)
+        mobilePhone.backgroundColor = UIColor(red: 0.96, green: 0.97, blue: 0.97, alpha: 1.00)
         textFieldCustomization(eMail)
         textFieldCustomization(dateOfBirth)
         //saveButtonCustomization
@@ -91,8 +94,12 @@ class EditProfileViewController: UIViewController {
         saveButton.layer.cornerRadius = 12
         deleteButton.titleLabel?.textColor = UIColor(red: 0.118, green: 0.141, blue: 0.184, alpha: 1)
         deleteButton.titleLabel?.font = UIFont(name: "Poppins-Regular", size: 12)
-        //        genderCustomization
+        //genderCustomization
         customGenderControl(genderControl)
+        //mobilePhoneTextFieldCustomization
+        mobilePhone.isUserInteractionEnabled = false
+        mobilePhone.keyboardType = .numberPad
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -121,7 +128,7 @@ class EditProfileViewController: UIViewController {
     }
     
     func customGenderControl(_ control:UISegmentedControl) {
-        let font = UIFont(name: "Poppins-Regular", size: 12) 
+        let font = UIFont(name: "Poppins-Regular", size: 12)
         let normalAttributes: [NSAttributedString.Key: Any] = [
             .font: font ?? .systemFont(ofSize: 12),
             .foregroundColor : UIColor.white
@@ -137,4 +144,30 @@ class EditProfileViewController: UIViewController {
         genderControl.setTitleTextAttributes(selectedAttributes, for: .selected)
         genderControl.selectedSegmentTintColor = UIColor(red: 0.04, green: 0.24, blue: 1, alpha: 1)
     }
+    
+    func getUserInfo() {
+        indicator.startAnimating()
+        indicator.color = .red
+        indicator.center = view.center
+        indicator.backgroundColor = .black
+        view.addSubview(indicator)
+        UserService().fetchUserData { [weak self] result in
+            switch result {
+            case .success(let userData):
+                DispatchQueue.main.async {
+                    self?.name.text = userData.name
+                    self?.surname.text = userData.surname
+                    self?.mobilePhone.text = userData.phoneNumber
+                    self?.eMail.text = userData.email
+                    self?.userNameLabel.text = userData.name+" "+userData.surname
+                }
+                self?.indicator.stopAnimating()
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    print("Error fetching user data: \(error.localizedDescription)")
+                }
+            }
+        }
+    } 
+    
 }

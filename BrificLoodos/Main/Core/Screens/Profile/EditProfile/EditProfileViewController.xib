@@ -68,8 +68,8 @@
                         <constraint firstItem="2NM-cf-GhG" firstAttribute="top" secondItem="eMn-jt-tlU" secondAttribute="top" id="q2N-Cc-jZw"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emre Şimşek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NC-PF-WEx">
-                    <rect key="frame" x="147" y="203" width="99" height="24"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NC-PF-WEx">
+                    <rect key="frame" x="196.66666666666666" y="203" width="0.0" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="DYS-mt-ywY"/>
                     </constraints>

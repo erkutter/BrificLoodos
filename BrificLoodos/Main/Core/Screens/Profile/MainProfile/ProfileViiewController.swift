@@ -33,7 +33,6 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(self.view.frame)
         self.navigationController?.isNavigationBarHidden = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(
                title: "Edit Profile", style: .plain, target: nil, action: nil)
@@ -69,12 +68,12 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         logOutButton.layer.shadowRadius = 20
         logOutButton.layer.shadowOffset = CGSize(width: 0, height: 4)
         dummyImage.layer.cornerRadius = dummyImage.frame.size.width / 2
-            dummyImage.clipsToBounds = true
+        dummyImage.clipsToBounds = true
         
     }
     
     override func viewDidLayoutSubviews() {
-        print(self.view.frame)
+        
     }
     @IBAction func editProfileTapped(_ sender: UIButton) {
         let editProfileViewController = EditProfileViewController(nibName: "EditProfileViewController", bundle: nil)
