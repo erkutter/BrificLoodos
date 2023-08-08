@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B001C22901BE9AEFAB78120 /* Pods_BrificLoodos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEB66091F350C1AD5486BB6 /* Pods_BrificLoodos.framework */; };
+		9A232CC12A82239F00034FF6 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A232CC02A82239F00034FF6 /* AppAssets.xcassets */; };
+		9A232CC62A8230F700034FF6 /* AddedMyBrificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A232CC42A8230F700034FF6 /* AddedMyBrificViewController.swift */; };
+		9A232CC72A8230F700034FF6 /* AddedMyBrificViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A232CC52A8230F700034FF6 /* AddedMyBrificViewController.xib */; };
 		9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F3D2A78300F003DF923 /* AppDelegate.swift */; };
 		9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6F3F2A78300F003DF923 /* SceneDelegate.swift */; };
 		9A4E6F4A2A783013003DF923 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4E6F482A783013003DF923 /* LaunchScreen.storyboard */; };
@@ -24,10 +27,11 @@
 		9A7003FE2A80C6BB00FC2094 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7003FD2A80C6BB00FC2094 /* Security.framework */; };
 		9A7004012A80C6FE00FC2094 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004002A80C6FE00FC2094 /* Constants.swift */; };
 		9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */; };
+		9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004072A81308A00FC2094 /* MyBrificViewController.swift */; };
+		9A70040A2A81308A00FC2094 /* MyBrificViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7004082A81308A00FC2094 /* MyBrificViewController.xib */; };
 		9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8C5F3E2A7D3364001E5818 /* UserService.swift */; };
 		9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */; };
 		9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */; };
-		9A9D896C2A79A46700C69BD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D896B2A79A46700C69BD8 /* Assets.xcassets */; };
 		9A9D89722A79B0CA00C69BD8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89702A79B0CA00C69BD8 /* CustomTableViewCell.swift */; };
 		9A9D89732A79B0CA00C69BD8 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D89712A79B0CA00C69BD8 /* CustomTableViewCell.xib */; };
 		9A9D897E2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D897D2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf */; };
@@ -41,6 +45,9 @@
 		5AEB66091F350C1AD5486BB6 /* Pods_BrificLoodos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrificLoodos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		634ED45B926F053455BEF2C0 /* Pods-BrificLoodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrificLoodos.release.xcconfig"; path = "Target Support Files/Pods-BrificLoodos/Pods-BrificLoodos.release.xcconfig"; sourceTree = "<group>"; };
 		7520A6445E3A4981A5ADFB10 /* Pods-BrificLoodos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrificLoodos.debug.xcconfig"; path = "Target Support Files/Pods-BrificLoodos/Pods-BrificLoodos.debug.xcconfig"; sourceTree = "<group>"; };
+		9A232CC02A82239F00034FF6 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
+		9A232CC42A8230F700034FF6 /* AddedMyBrificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddedMyBrificViewController.swift; sourceTree = "<group>"; };
+		9A232CC52A8230F700034FF6 /* AddedMyBrificViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddedMyBrificViewController.xib; sourceTree = "<group>"; };
 		9A4E6F3A2A78300F003DF923 /* BrificLoodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrificLoodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4E6F3D2A78300F003DF923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A4E6F3F2A78300F003DF923 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,10 +66,11 @@
 		9A7003FD2A80C6BB00FC2094 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9A7004002A80C6FE00FC2094 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
+		9A7004072A81308A00FC2094 /* MyBrificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBrificViewController.swift; sourceTree = "<group>"; };
+		9A7004082A81308A00FC2094 /* MyBrificViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBrificViewController.xib; sourceTree = "<group>"; };
 		9A8C5F3E2A7D3364001E5818 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabBar.swift; path = ../../../../../../.Trash/CustomTabBar.swift; sourceTree = "<group>"; };
 		9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		9A9D896B2A79A46700C69BD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		9A9D89702A79B0CA00C69BD8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		9A9D89712A79B0CA00C69BD8 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		9A9D897D2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -103,6 +111,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9A232CC22A822EDA00034FF6 /* BrificNotAdded */ = {
+			isa = PBXGroup;
+			children = (
+				9A232CC42A8230F700034FF6 /* AddedMyBrificViewController.swift */,
+				9A232CC52A8230F700034FF6 /* AddedMyBrificViewController.xib */,
+			);
+			path = BrificNotAdded;
+			sourceTree = "<group>";
+		};
+		9A232CC32A822EDD00034FF6 /* BrificAdded */ = {
+			isa = PBXGroup;
+			children = (
+				9A7004072A81308A00FC2094 /* MyBrificViewController.swift */,
+				9A7004082A81308A00FC2094 /* MyBrificViewController.xib */,
+			);
+			path = BrificAdded;
+			sourceTree = "<group>";
+		};
 		9A4E6F312A78300F003DF923 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				9A7004022A8114ED00FC2094 /* Extension */,
+				9A4E6F5E2A7836CC003DF923 /* Assets */,
 				9A7003FF2A80C6DE00FC2094 /* Auth */,
 				9A4E6F512A7832F4003DF923 /* Main */,
 				9A4E6F482A783013003DF923 /* LaunchScreen.storyboard */,
@@ -137,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				9A8C5F3A2A7D2E3A001E5818 /* Service */,
-				9A4E6F5E2A7836CC003DF923 /* Assets */,
 				9A4E6F5D2A7836BE003DF923 /* App */,
 				9A4E6F572A78365A003DF923 /* Core */,
 			);
@@ -184,6 +210,7 @@
 		9A4E6F5B2A7836A4003DF923 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				9A7004052A81305900FC2094 /* ProfileMenus */,
 				9A9D89842A7B86DA00C69BD8 /* EditProfile */,
 				9A9D89832A7B86CD00C69BD8 /* MainProfile */,
 			);
@@ -214,7 +241,7 @@
 				9A9D89812A7AE25100C69BD8 /* Poppins-Regular.ttf */,
 				9A9D897F2A7AE0E500C69BD8 /* Poppins-Medium.ttf */,
 				9A9D897D2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf */,
-				9A9D896B2A79A46700C69BD8 /* Assets.xcassets */,
+				9A232CC02A82239F00034FF6 /* AppAssets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -245,6 +272,23 @@
 				9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		9A7004052A81305900FC2094 /* ProfileMenus */ = {
+			isa = PBXGroup;
+			children = (
+				9A7004062A81306F00FC2094 /* MyBrific */,
+			);
+			path = ProfileMenus;
+			sourceTree = "<group>";
+		};
+		9A7004062A81306F00FC2094 /* MyBrific */ = {
+			isa = PBXGroup;
+			children = (
+				9A232CC32A822EDD00034FF6 /* BrificAdded */,
+				9A232CC22A822EDA00034FF6 /* BrificNotAdded */,
+			);
+			path = MyBrific;
 			sourceTree = "<group>";
 		};
 		9A8C5F3A2A7D2E3A001E5818 /* Service */ = {
@@ -353,10 +397,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4E6F702A783D6A003DF923 /* ProfileViiewController.xib in Resources */,
+				9A70040A2A81308A00FC2094 /* MyBrificViewController.xib in Resources */,
+				9A232CC12A82239F00034FF6 /* AppAssets.xcassets in Resources */,
 				9A4E6F4A2A783013003DF923 /* LaunchScreen.storyboard in Resources */,
+				9A232CC72A8230F700034FF6 /* AddedMyBrificViewController.xib in Resources */,
 				9A4E6F6C2A783D5D003DF923 /* MarketViewController.xib in Resources */,
 				9A4E6F782A783D83003DF923 /* SocialViewController.xib in Resources */,
-				9A9D896C2A79A46700C69BD8 /* Assets.xcassets in Resources */,
 				9A4E6F742A783D76003DF923 /* MapViewController.xib in Resources */,
 				9A9D897E2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf in Resources */,
 				9A9D89732A79B0CA00C69BD8 /* CustomTableViewCell.xib in Resources */,
@@ -418,9 +464,11 @@
 			files = (
 				9A9D89892A7B870D00C69BD8 /* EditProfileViewController.swift in Sources */,
 				9A4E6F6F2A783D6A003DF923 /* ProfileViiewController.swift in Sources */,
+				9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */,
 				9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */,
 				9A4E6F6B2A783D5D003DF923 /* MarketViewController.swift in Sources */,
 				9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */,
+				9A232CC62A8230F700034FF6 /* AddedMyBrificViewController.swift in Sources */,
 				9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */,
 				9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */,
 				9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */,

@@ -35,14 +35,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
         getUserInfo()
-        self.navigationController?.isNavigationBarHidden = true
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(
-               title: "Edit Profile", style: .plain, target: nil, action: nil)
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) 
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
-        self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
+        
         view.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
         
         nameLabel.font = UIFont(name: "Poppins-Semibold", size: 16)
@@ -82,6 +75,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         
     }
     @IBAction func editProfileTapped(_ sender: UIButton) {
+        styleNavBarWithTitle("Edit Profile")
         let editProfileViewController = EditProfileViewController(nibName: "EditProfileViewController", bundle: nil)
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.pushViewController(editProfileViewController, animated: true)
@@ -126,7 +120,13 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(IndexPath.self)
+        if tableView.indexPathForSelectedRow == [0,0] {
+            styleNavBarWithTitle("My Brific")
+            let myBrificViewController = MyBrificViewController(nibName: "MyBrificViewController", bundle: nil)
+            self.navigationController?.pushViewController(myBrificViewController, animated: true)
+            
+            
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -164,6 +164,17 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
                 }
             }
         }
+    }
+    
+    func styleNavBarWithTitle(_ title:String){
+        self.navigationController?.isNavigationBarHidden = true
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(
+               title: title, style: .plain, target: nil, action: nil)
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
+        self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
     }
     
 }
