@@ -35,36 +35,53 @@ class AddedMyBrificViewController: UIViewController {
     private func registerCells() {
         collectionView.register(UINib(nibName: "PropertiesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell1")
         collectionView.register(UINib(nibName: "DrivingModeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell2")
+        collectionView.register(UINib(nibName: "BrificUnitsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell3")
     }
 }
 
 extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        if (indexPath.item == 0) {
+        if indexPath.item == 0 {
             let cell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell1", for: indexPath) as? PropertiesCollectionViewCell
             
             return cell1 ?? UICollectionViewCell()
-        } else {
+        } else if indexPath.item == 1 {
             let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as? DrivingModeCollectionViewCell
             
             return cell2 ?? UICollectionViewCell()
+        } else {
+            let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell3", for: indexPath) as? BrificUnitsCollectionViewCell
+            
+            return cell3 ?? UICollectionViewCell()
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = collectionView.frame.width
+        var cellHeight: CGFloat = 0
         
-        return CGSize(width: collectionView.frame.width,
-                      height: 154)
+        if indexPath.item == 0 {
+            cellHeight = 154
+        } else if indexPath.item == 1 {
+            cellHeight = 146
+        } else if indexPath.item == 2 {
+            cellHeight = 82
+        }
+        
+        return CGSize(width: cellWidth, height: cellHeight)
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 16
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 16
     }
-
     
 }

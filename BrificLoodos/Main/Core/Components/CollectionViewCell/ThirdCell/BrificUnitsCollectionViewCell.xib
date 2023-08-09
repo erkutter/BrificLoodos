@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BrificUnitsCollectionViewCell" customModule="BrificLoodos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" id="gKk-xh-75i">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="82"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brific Units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mA9-Qp-pTN">
+                                <rect key="frame" x="32" y="31" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jzH-iE-rcJ">
+                                <rect key="frame" x="214" y="17" width="105" height="49"/>
+                                <segments>
+                                    <segment title="Km/h"/>
+                                    <segment title="Nm/h"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="mA9-Qp-pTN" secondAttribute="bottom" constant="30" id="Q6X-GN-Nyt"/>
+                            <constraint firstAttribute="trailing" secondItem="jzH-iE-rcJ" secondAttribute="trailing" constant="24" id="SXb-qe-iFW"/>
+                            <constraint firstItem="jzH-iE-rcJ" firstAttribute="top" secondItem="gKk-xh-75i" secondAttribute="top" constant="17" id="U3u-hC-fNK"/>
+                            <constraint firstItem="mA9-Qp-pTN" firstAttribute="leading" secondItem="gKk-xh-75i" secondAttribute="leading" constant="32" id="i0O-ag-sHR"/>
+                            <constraint firstAttribute="bottom" secondItem="jzH-iE-rcJ" secondAttribute="bottom" constant="17" id="m5E-Ob-asO"/>
+                            <constraint firstItem="mA9-Qp-pTN" firstAttribute="top" secondItem="gKk-xh-75i" secondAttribute="top" constant="31" id="zMR-Zb-ZEp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="gKk-xh-75i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2gc-bN-QTH"/>
+                <constraint firstItem="gKk-xh-75i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BNd-bA-oHE"/>
+                <constraint firstAttribute="trailing" secondItem="gKk-xh-75i" secondAttribute="trailing" id="Sh3-HW-iwP"/>
+                <constraint firstAttribute="bottom" secondItem="gKk-xh-75i" secondAttribute="bottom" id="mzv-qs-IES"/>
+            </constraints>
+            <connections>
+                <outlet property="brificUnitsContainer" destination="gKk-xh-75i" id="Ojr-pZ-cxV"/>
+                <outlet property="brificUnitsLabel" destination="mA9-Qp-pTN" id="aQC-7W-fvp"/>
+                <outlet property="speedControl" destination="jzH-iE-rcJ" id="GIy-gD-VsB"/>
+            </connections>
+            <point key="canvasLocation" x="100.76335877862596" y="-12.67605633802817"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

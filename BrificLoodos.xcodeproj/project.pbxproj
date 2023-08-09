@@ -43,6 +43,8 @@
 		9AADBB292A836F480002877B /* PropertiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB272A836F480002877B /* PropertiesCollectionViewCell.xib */; };
 		9AADBB2E2A83A93E0002877B /* DrivingModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADBB2C2A83A93E0002877B /* DrivingModeCollectionViewCell.swift */; };
 		9AADBB2F2A83A93E0002877B /* DrivingModeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */; };
+		9AADBB372A83BC370002877B /* BrificUnitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADBB352A83BC370002877B /* BrificUnitsCollectionViewCell.swift */; };
+		9AADBB382A83BC370002877B /* BrificUnitsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +88,8 @@
 		9AADBB272A836F480002877B /* PropertiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertiesCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AADBB2C2A83A93E0002877B /* DrivingModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivingModeCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrivingModeCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AADBB352A83BC370002877B /* BrificUnitsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrificUnitsCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrificUnitsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +360,7 @@
 		9AADBB252A836ECB0002877B /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				9AADBB302A83BBCF0002877B /* ThirdCell */,
 				9AADBB2B2A83A8E50002877B /* SecondCell */,
 				9AADBB2A2A83A8D40002877B /* FirstCell */,
 			);
@@ -378,6 +383,15 @@
 				9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */,
 			);
 			path = SecondCell;
+			sourceTree = "<group>";
+		};
+		9AADBB302A83BBCF0002877B /* ThirdCell */ = {
+			isa = PBXGroup;
+			children = (
+				9AADBB352A83BC370002877B /* BrificUnitsCollectionViewCell.swift */,
+				9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */,
+			);
+			path = ThirdCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +456,7 @@
 			files = (
 				9A4E6F702A783D6A003DF923 /* ProfileViiewController.xib in Resources */,
 				9A70040A2A81308A00FC2094 /* MyBrificViewController.xib in Resources */,
+				9AADBB382A83BC370002877B /* BrificUnitsCollectionViewCell.xib in Resources */,
 				9A232CC12A82239F00034FF6 /* AppAssets.xcassets in Resources */,
 				9AADBB2F2A83A93E0002877B /* DrivingModeCollectionViewCell.xib in Resources */,
 				9A4E6F4A2A783013003DF923 /* LaunchScreen.storyboard in Resources */,
@@ -513,6 +528,7 @@
 				9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */,
 				9AADBB2E2A83A93E0002877B /* DrivingModeCollectionViewCell.swift in Sources */,
 				9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */,
+				9AADBB372A83BC370002877B /* BrificUnitsCollectionViewCell.swift in Sources */,
 				9A4E6F6B2A783D5D003DF923 /* MarketViewController.swift in Sources */,
 				9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */,
 				9A232CC62A8230F700034FF6 /* AddedMyBrificViewController.swift in Sources */,

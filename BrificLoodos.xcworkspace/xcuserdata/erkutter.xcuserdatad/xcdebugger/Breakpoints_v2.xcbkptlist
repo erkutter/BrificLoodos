@@ -252,5 +252,165 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D020DCA5-5EDB-45FD-A0CD-3967D0CFC592"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D020DCA5-5EDB-45FD-A0CD-3967D0CFC592 - 94ece4668e78359"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.AddedMyBrificViewController.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "352">
+               </Location>
+               <Location
+                  uuid = "D020DCA5-5EDB-45FD-A0CD-3967D0CFC592 - 94ece4668e78359"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.AddedMyBrificViewController.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "412">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A2393FA-379F-451A-AEB4-0B65AAE2BFA7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8A2393FA-379F-451A-AEB4-0B65AAE2BFA7 - 94ece4668e78051"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.AddedMyBrificViewController.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "79"
+                  endingLineNumber = "79"
+                  offsetFromSymbolStart = "612">
+               </Location>
+               <Location
+                  uuid = "8A2393FA-379F-451A-AEB4-0B65AAE2BFA7 - 94ece4668e78072"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.AddedMyBrificViewController.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "612">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "36A7B0B7-BF6E-41FA-95C6-F343ACD31C93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "36A7B0B7-BF6E-41FA-95C6-F343ACD31C93 - 94ece4668e780dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.AddedMyBrificViewController.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "512">
+               </Location>
+               <Location
+                  uuid = "36A7B0B7-BF6E-41FA-95C6-F343ACD31C93 - 94ece4668e780dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.AddedMyBrificViewController.collectionView(_: __C.UICollectionView, layout: __C.UICollectionViewLayout, sizeForItemAt: Foundation.IndexPath) -&gt; __C.CGSize"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "75"
+                  endingLineNumber = "75"
+                  offsetFromSymbolStart = "583">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B7FFFF0-4083-4BFC-BDAB-E859730A0D12"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/ProfileMenus/MyBrific/BrificNotAdded/AddedMyBrificViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "collectionView(_:layout:sizeForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
