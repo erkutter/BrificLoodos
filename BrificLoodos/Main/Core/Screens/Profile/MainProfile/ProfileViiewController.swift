@@ -9,7 +9,8 @@ import UIKit
 
 class ProfileViiewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let indicator = UIActivityIndicatorView(style: .large)
-
+    var haveBrific = true
+    
     @IBOutlet weak var profileContainerView: UIView!
     
     @IBOutlet weak var userImageContainer: UIView!
@@ -122,27 +123,31 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if tableView.indexPathForSelectedRow == [0,0] {
             styleNavBarWithTitle("My Brific")
+            let addedMyBrificViewController = AddedMyBrificViewController(nibName: "AddedMyBrificViewController", bundle: nil)
             let myBrificViewController = MyBrificViewController(nibName: "MyBrificViewController", bundle: nil)
-            self.navigationController?.pushViewController(myBrificViewController, animated: true)
-            
+            if haveBrific {
+                navigationController?.pushViewController(addedMyBrificViewController, animated: true)
+            } else {
+                navigationController?.pushViewController(myBrificViewController, animated: true)
+            }
             
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         getUserInfo()
-
+        
         super.viewWillAppear(animated)
-
+        
         self.navigationController?.isNavigationBarHidden = true
         
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         getUserInfo()
-
+        
         super.viewWillDisappear(animated)
-
+        
         self.navigationController?.isNavigationBarHidden = false
     }
     func getUserInfo() {
@@ -169,7 +174,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     func styleNavBarWithTitle(_ title:String){
         self.navigationController?.isNavigationBarHidden = true
         self.navigationItem.backBarButtonItem = UIBarButtonItem(
-               title: title, style: .plain, target: nil, action: nil)
+            title: title, style: .plain, target: nil, action: nil)
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true

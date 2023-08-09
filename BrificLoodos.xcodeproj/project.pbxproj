@@ -39,6 +39,10 @@
 		9A9D89822A7AE25100C69BD8 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D89812A7AE25100C69BD8 /* Poppins-Regular.ttf */; };
 		9A9D89892A7B870D00C69BD8 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89872A7B870D00C69BD8 /* EditProfileViewController.swift */; };
 		9A9D898A2A7B870D00C69BD8 /* EditProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9D89882A7B870D00C69BD8 /* EditProfileViewController.xib */; };
+		9AADBB282A836F480002877B /* PropertiesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADBB262A836F480002877B /* PropertiesCollectionViewCell.swift */; };
+		9AADBB292A836F480002877B /* PropertiesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB272A836F480002877B /* PropertiesCollectionViewCell.xib */; };
+		9AADBB2E2A83A93E0002877B /* DrivingModeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADBB2C2A83A93E0002877B /* DrivingModeCollectionViewCell.swift */; };
+		9AADBB2F2A83A93E0002877B /* DrivingModeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +82,10 @@
 		9A9D89812A7AE25100C69BD8 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		9A9D89872A7B870D00C69BD8 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		9A9D89882A7B870D00C69BD8 /* EditProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileViewController.xib; sourceTree = "<group>"; };
+		9AADBB262A836F480002877B /* PropertiesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AADBB272A836F480002877B /* PropertiesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertiesCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AADBB2C2A83A93E0002877B /* DrivingModeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivingModeCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrivingModeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,8 +320,8 @@
 		9A9D896D2A79B08500C69BD8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				9A9D89702A79B0CA00C69BD8 /* CustomTableViewCell.swift */,
-				9A9D89712A79B0CA00C69BD8 /* CustomTableViewCell.xib */,
+				9AADBB252A836ECB0002877B /* CollectionViewCell */,
+				9AADBB242A836EC50002877B /* TableViewCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -334,6 +342,42 @@
 				9A9D89882A7B870D00C69BD8 /* EditProfileViewController.xib */,
 			);
 			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		9AADBB242A836EC50002877B /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A9D89702A79B0CA00C69BD8 /* CustomTableViewCell.swift */,
+				9A9D89712A79B0CA00C69BD8 /* CustomTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		9AADBB252A836ECB0002877B /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9AADBB2B2A83A8E50002877B /* SecondCell */,
+				9AADBB2A2A83A8D40002877B /* FirstCell */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		9AADBB2A2A83A8D40002877B /* FirstCell */ = {
+			isa = PBXGroup;
+			children = (
+				9AADBB262A836F480002877B /* PropertiesCollectionViewCell.swift */,
+				9AADBB272A836F480002877B /* PropertiesCollectionViewCell.xib */,
+			);
+			path = FirstCell;
+			sourceTree = "<group>";
+		};
+		9AADBB2B2A83A8E50002877B /* SecondCell */ = {
+			isa = PBXGroup;
+			children = (
+				9AADBB2C2A83A93E0002877B /* DrivingModeCollectionViewCell.swift */,
+				9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */,
+			);
+			path = SecondCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +443,7 @@
 				9A4E6F702A783D6A003DF923 /* ProfileViiewController.xib in Resources */,
 				9A70040A2A81308A00FC2094 /* MyBrificViewController.xib in Resources */,
 				9A232CC12A82239F00034FF6 /* AppAssets.xcassets in Resources */,
+				9AADBB2F2A83A93E0002877B /* DrivingModeCollectionViewCell.xib in Resources */,
 				9A4E6F4A2A783013003DF923 /* LaunchScreen.storyboard in Resources */,
 				9A232CC72A8230F700034FF6 /* AddedMyBrificViewController.xib in Resources */,
 				9A4E6F6C2A783D5D003DF923 /* MarketViewController.xib in Resources */,
@@ -406,6 +451,7 @@
 				9A4E6F742A783D76003DF923 /* MapViewController.xib in Resources */,
 				9A9D897E2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf in Resources */,
 				9A9D89732A79B0CA00C69BD8 /* CustomTableViewCell.xib in Resources */,
+				9AADBB292A836F480002877B /* PropertiesCollectionViewCell.xib in Resources */,
 				9A9D898A2A7B870D00C69BD8 /* EditProfileViewController.xib in Resources */,
 				9A9D89822A7AE25100C69BD8 /* Poppins-Regular.ttf in Resources */,
 				9A4E6F682A783D52003DF923 /* HomeViewController.xib in Resources */,
@@ -465,6 +511,7 @@
 				9A9D89892A7B870D00C69BD8 /* EditProfileViewController.swift in Sources */,
 				9A4E6F6F2A783D6A003DF923 /* ProfileViiewController.swift in Sources */,
 				9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */,
+				9AADBB2E2A83A93E0002877B /* DrivingModeCollectionViewCell.swift in Sources */,
 				9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */,
 				9A4E6F6B2A783D5D003DF923 /* MarketViewController.swift in Sources */,
 				9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */,
@@ -475,6 +522,7 @@
 				9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */,
 				9A9D89722A79B0CA00C69BD8 /* CustomTableViewCell.swift in Sources */,
 				9A4E6F672A783D52003DF923 /* HomeViewController.swift in Sources */,
+				9AADBB282A836F480002877B /* PropertiesCollectionViewCell.swift in Sources */,
 				9A4E6F732A783D76003DF923 /* MapViewController.swift in Sources */,
 				9A4E6F772A783D83003DF923 /* SocialViewController.swift in Sources */,
 				9A7004012A80C6FE00FC2094 /* Constants.swift in Sources */,
