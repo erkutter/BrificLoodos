@@ -11,14 +11,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BrificUnitsCollectionViewCell" customModule="BrificLoodos" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="343" height="82"/>
+            <rect key="frame" x="0.0" y="0.0" width="361" height="82"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="343" height="82"/>
+                <rect key="frame" x="0.0" y="0.0" width="361" height="82"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" id="gKk-xh-75i">
-                        <rect key="frame" x="0.0" y="0.0" width="343" height="82"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="82"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brific Units" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mA9-Qp-pTN">
@@ -28,7 +28,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jzH-iE-rcJ">
-                                <rect key="frame" x="214" y="17" width="105" height="49"/>
+                                <rect key="frame" x="232" y="17" width="105" height="49"/>
                                 <segments>
                                     <segment title="Km/h"/>
                                     <segment title="Nm/h"/>

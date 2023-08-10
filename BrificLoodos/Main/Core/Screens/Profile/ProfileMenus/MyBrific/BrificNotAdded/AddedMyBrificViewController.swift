@@ -36,13 +36,18 @@ class AddedMyBrificViewController: UIViewController {
         collectionView.register(UINib(nibName: "PropertiesCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell1")
         collectionView.register(UINib(nibName: "DrivingModeCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell2")
         collectionView.register(UINib(nibName: "BrificUnitsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell3")
+        collectionView.register(UINib(nibName: "LightButtonCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell4")
+        collectionView.register(UINib(nibName: "CollectionTableCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell5")
+        collectionView.register(UINib(nibName: "CollectionTableCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell6")
+        collectionView.register(UINib(nibName: "CollectionTableCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell7")
+
     }
 }
 
 extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 7
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -55,10 +60,35 @@ extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionVi
             let cell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell2", for: indexPath) as? DrivingModeCollectionViewCell
             
             return cell2 ?? UICollectionViewCell()
-        } else {
+        } else if indexPath.item == 2{
             let cell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell3", for: indexPath) as? BrificUnitsCollectionViewCell
             
             return cell3 ?? UICollectionViewCell()
+        } else if indexPath.item == 3{
+            let cell4 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell4", for: indexPath) as? LightButtonCollectionViewCell
+            
+            return cell4 ?? UICollectionViewCell()
+        } else if indexPath.item == 4{
+            let cell5 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell5", for: indexPath) as? CollectionTableCellCollectionViewCell
+            
+            cell5?.buttonImageView.image = UIImage(named: "bluetooth")
+            cell5?.buttonName.text = "Disconnect"
+            
+            return cell5 ?? UICollectionViewCell()
+        } else if indexPath.item == 5{
+            let cell6 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell6", for: indexPath) as? CollectionTableCellCollectionViewCell
+            
+            cell6?.buttonImageView.image = UIImage(named: "repair")
+            cell6?.buttonName.text = "Service Deck"
+            
+            return cell6 ?? UICollectionViewCell()
+        } else {
+            let cell7 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell7", for: indexPath) as? CollectionTableCellCollectionViewCell
+            
+            cell7?.buttonImageView.image = UIImage(named: "openBook")
+            cell7?.buttonName.text = "User Manual"
+            
+            return cell7 ?? UICollectionViewCell()
         }
     }
     
@@ -72,6 +102,10 @@ extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionVi
             cellHeight = 146
         } else if indexPath.item == 2 {
             cellHeight = 82
+        } else if indexPath.item == 3 {
+            cellHeight = 52
+        } else {
+            cellHeight = 64
         }
         
         return CGSize(width: cellWidth, height: cellHeight)
