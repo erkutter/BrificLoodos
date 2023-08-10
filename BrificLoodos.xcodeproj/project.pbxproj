@@ -49,6 +49,12 @@
 		9AADBB2F2A83A93E0002877B /* DrivingModeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */; };
 		9AADBB372A83BC370002877B /* BrificUnitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADBB352A83BC370002877B /* BrificUnitsCollectionViewCell.swift */; };
 		9AADBB382A83BC370002877B /* BrificUnitsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */; };
+		9AD86C9B2A8503A1009676AA /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86C992A8503A1009676AA /* ButtonCollectionViewCell.swift */; };
+		9AD86C9C2A8503A1009676AA /* ButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86C9A2A8503A1009676AA /* ButtonCollectionViewCell.xib */; };
+		9AD86CA02A8516B0009676AA /* FooterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86C9E2A8516B0009676AA /* FooterCollectionViewCell.swift */; };
+		9AD86CA12A8516B0009676AA /* FooterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86C9F2A8516B0009676AA /* FooterCollectionViewCell.xib */; };
+		9AD86CA52A851969009676AA /* RemoveButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86CA32A851969009676AA /* RemoveButtonCollectionViewCell.swift */; };
+		9AD86CA62A851969009676AA /* RemoveButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86CA42A851969009676AA /* RemoveButtonCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +104,12 @@
 		9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrivingModeCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AADBB352A83BC370002877B /* BrificUnitsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrificUnitsCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrificUnitsCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AD86C992A8503A1009676AA /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AD86C9A2A8503A1009676AA /* ButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AD86C9E2A8516B0009676AA /* FooterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AD86C9F2A8516B0009676AA /* FooterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AD86CA32A851969009676AA /* RemoveButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		9AD86CA42A851969009676AA /* RemoveButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoveButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -350,6 +362,9 @@
 		9A9D896D2A79B08500C69BD8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				9AD86CA22A85194F009676AA /* CollectionRemoveButton */,
+				9AD86C9D2A85169A009676AA /* CollectionFooter */,
+				9AD86C982A850386009676AA /* CollectionViewButton */,
 				9AADBB252A836ECB0002877B /* CollectionViewCell */,
 				9AADBB242A836EC50002877B /* TableViewCell */,
 			);
@@ -420,6 +435,33 @@
 				9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */,
 			);
 			path = ThirdCell;
+			sourceTree = "<group>";
+		};
+		9AD86C982A850386009676AA /* CollectionViewButton */ = {
+			isa = PBXGroup;
+			children = (
+				9AD86C992A8503A1009676AA /* ButtonCollectionViewCell.swift */,
+				9AD86C9A2A8503A1009676AA /* ButtonCollectionViewCell.xib */,
+			);
+			path = CollectionViewButton;
+			sourceTree = "<group>";
+		};
+		9AD86C9D2A85169A009676AA /* CollectionFooter */ = {
+			isa = PBXGroup;
+			children = (
+				9AD86C9E2A8516B0009676AA /* FooterCollectionViewCell.swift */,
+				9AD86C9F2A8516B0009676AA /* FooterCollectionViewCell.xib */,
+			);
+			path = CollectionFooter;
+			sourceTree = "<group>";
+		};
+		9AD86CA22A85194F009676AA /* CollectionRemoveButton */ = {
+			isa = PBXGroup;
+			children = (
+				9AD86CA32A851969009676AA /* RemoveButtonCollectionViewCell.swift */,
+				9AD86CA42A851969009676AA /* RemoveButtonCollectionViewCell.xib */,
+			);
+			path = CollectionRemoveButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,11 +536,14 @@
 				9A61B6FE2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib in Resources */,
 				9A4E6F742A783D76003DF923 /* MapViewController.xib in Resources */,
 				9A9D897E2A7AE0D900C69BD8 /* Poppins-SemiBold.ttf in Resources */,
+				9AD86C9C2A8503A1009676AA /* ButtonCollectionViewCell.xib in Resources */,
 				9A9D89732A79B0CA00C69BD8 /* CustomTableViewCell.xib in Resources */,
 				9AADBB292A836F480002877B /* PropertiesCollectionViewCell.xib in Resources */,
 				9A9D898A2A7B870D00C69BD8 /* EditProfileViewController.xib in Resources */,
 				9A9D89822A7AE25100C69BD8 /* Poppins-Regular.ttf in Resources */,
 				9A4E6F682A783D52003DF923 /* HomeViewController.xib in Resources */,
+				9AD86CA62A851969009676AA /* RemoveButtonCollectionViewCell.xib in Resources */,
+				9AD86CA12A8516B0009676AA /* FooterCollectionViewCell.xib in Resources */,
 				9A9D89802A7AE0E500C69BD8 /* Poppins-Medium.ttf in Resources */,
 				9A61B6F92A84C8AF00A55281 /* LightButtonCollectionViewCell.xib in Resources */,
 			);
@@ -554,15 +599,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9D89892A7B870D00C69BD8 /* EditProfileViewController.swift in Sources */,
+				9AD86CA02A8516B0009676AA /* FooterCollectionViewCell.swift in Sources */,
 				9A4E6F6F2A783D6A003DF923 /* ProfileViiewController.swift in Sources */,
 				9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */,
 				9AADBB2E2A83A93E0002877B /* DrivingModeCollectionViewCell.swift in Sources */,
 				9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */,
 				9AADBB372A83BC370002877B /* BrificUnitsCollectionViewCell.swift in Sources */,
 				9A4E6F6B2A783D5D003DF923 /* MarketViewController.swift in Sources */,
+				9AD86CA52A851969009676AA /* RemoveButtonCollectionViewCell.swift in Sources */,
 				9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */,
 				9A232CC62A8230F700034FF6 /* AddedMyBrificViewController.swift in Sources */,
 				9A61B6FD2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift in Sources */,
+				9AD86C9B2A8503A1009676AA /* ButtonCollectionViewCell.swift in Sources */,
 				9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */,
 				9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */,
 				9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */,

@@ -18,6 +18,7 @@ class DrivingModeCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         setupUI()
         customModeControl(modeControl)
+        fixBackgroundColorWorkaround()
     }
     
     private func setupUI(){
@@ -27,6 +28,7 @@ class DrivingModeCollectionViewCell: UICollectionViewCell {
         drivingModeLabel.font = UIFont(name: "Poppins-SemiBold", size: 16)
         chooseYourLabel.textColor = UIColor(red: 0.118, green: 0.141, blue: 0.184, alpha: 1)
         chooseYourLabel.font = UIFont(name: "Poppins-Regular", size: 12)
+//        modeControl.backgroundColor = .white
         
     }
     
@@ -34,17 +36,26 @@ class DrivingModeCollectionViewCell: UICollectionViewCell {
         let font = UIFont(name: "Poppins-Regular", size: 12)
         let normalAttributes: [NSAttributedString.Key: Any] = [
             .font: font ?? .systemFont(ofSize: 12),
-            .foregroundColor : UIColor.white
+            .foregroundColor : UIColor(red: 0.56, green: 0.57, blue: 0.58, alpha: 1)
         ]
         
         modeControl.setTitleTextAttributes(normalAttributes, for: .normal)
         
         let selectedAttributes: [NSAttributedString.Key: Any] = [
             .font: font ?? .systemFont(ofSize: 12),
-            .foregroundColor : UIColor.white
+            .foregroundColor : UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         ]
         
         modeControl.setTitleTextAttributes(selectedAttributes, for: .selected)
         modeControl.selectedSegmentTintColor = UIColor(red: 0.04, green: 0.24, blue: 1, alpha: 1)
+    }
+    
+    func fixBackgroundColorWorkaround() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            for i in 0 ... (self.modeControl.numberOfSegments-1) {
+                let bg = self.modeControl.subviews[i]
+                bg.isHidden = true
+            }
+        }
     }
 }

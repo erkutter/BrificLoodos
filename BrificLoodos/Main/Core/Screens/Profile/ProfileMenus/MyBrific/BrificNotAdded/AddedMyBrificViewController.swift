@@ -20,6 +20,7 @@ class AddedMyBrificViewController: UIViewController {
     }
     
     private func setupViews() {
+        collectionView.backgroundColor = UIColor(red: 1, green: 1, blue: 0.98, alpha: 1)
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -40,6 +41,10 @@ class AddedMyBrificViewController: UIViewController {
         collectionView.register(UINib(nibName: "CollectionTableCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell5")
         collectionView.register(UINib(nibName: "CollectionTableCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell6")
         collectionView.register(UINib(nibName: "CollectionTableCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell7")
+        collectionView.register(UINib(nibName: "ButtonCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell8")
+        collectionView.register(UINib(nibName: "FooterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell9")
+        collectionView.register(UINib(nibName: "RemoveButtonCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell10")
+
 
     }
 }
@@ -47,7 +52,7 @@ class AddedMyBrificViewController: UIViewController {
 extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 7
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -82,13 +87,25 @@ extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionVi
             cell6?.buttonName.text = "Service Deck"
             
             return cell6 ?? UICollectionViewCell()
-        } else {
+        } else if indexPath.item == 6{
             let cell7 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell7", for: indexPath) as? CollectionTableCellCollectionViewCell
             
             cell7?.buttonImageView.image = UIImage(named: "openBook")
             cell7?.buttonName.text = "User Manual"
             
             return cell7 ?? UICollectionViewCell()
+        } else if indexPath.item == 7 {
+            let cell8 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell8", for: indexPath) as? ButtonCollectionViewCell
+            
+            return cell8 ?? UICollectionViewCell()
+        } else if indexPath.item == 8 {
+            let cell9 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell9", for: indexPath) as? FooterCollectionViewCell
+            
+            return cell9 ?? UICollectionViewCell()
+        } else  {
+            let cell10 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell10", for: indexPath) as? RemoveButtonCollectionViewCell
+            
+            return cell10 ?? UICollectionViewCell()
         }
     }
     
@@ -104,18 +121,32 @@ extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionVi
             cellHeight = 82
         } else if indexPath.item == 3 {
             cellHeight = 52
-        } else {
+        } else if indexPath.item == 4 {
             cellHeight = 64
+        } else if indexPath.item == 5 {
+            cellHeight = 64
+        } else if indexPath.item == 6 {
+            cellHeight = 64
+        } else if indexPath.item == 7 {
+            cellHeight = 48
+        } else if indexPath.item == 8 {
+            cellHeight = 36
+        } else if indexPath.item == 9 {
+            cellHeight = 48
         }
         
         return CGSize(width: cellWidth, height: cellHeight)
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 16
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 16
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize(width: 361,height: 50)
     }
     
 }

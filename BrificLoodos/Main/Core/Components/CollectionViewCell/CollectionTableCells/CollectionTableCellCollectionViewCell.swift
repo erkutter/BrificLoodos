@@ -9,8 +9,8 @@ import UIKit
 
 class CollectionTableCellCollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var collectionView: UIView!
     
+    @IBOutlet weak var colView: UIView!
     @IBOutlet weak var buttonName: UILabel!
     
     @IBOutlet weak var buttonImage: UIView!
@@ -23,14 +23,16 @@ class CollectionTableCellCollectionViewCell: UICollectionViewCell {
         
     }
     private func setupUI() {
-        collectionView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
-        collectionView.layer.shadowColor = UIColor(red: 0.114, green: 0.133, blue: 0.18, alpha: 0.1).cgColor
-        collectionView.layer.shadowOpacity = 1
-        collectionView.layer.shadowRadius = 20
-        collectionView.layer.shadowOffset = CGSize(width: 0, height: 4)
-        collectionView.layer.cornerRadius = 8
-        collectionView.layer.borderWidth = 1
-        collectionView.layer.borderColor = UIColor(red: 0.937, green: 0.945, blue: 0.961, alpha: 1).cgColor
+        colView.clipsToBounds = true
+        
+        colView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
+        colView.layer.shadowColor = UIColor(red: 0.114, green: 0.133, blue: 0.18, alpha: 0.1).cgColor
+        colView.layer.shadowOpacity = 1
+        colView.layer.shadowRadius = 20
+        colView.layer.shadowOffset = CGSize(width: 0, height: 4)
+        colView.layer.cornerRadius = 8
+        colView.layer.borderWidth = 1
+        colView.layer.borderColor = UIColor(red: 0.937, green: 0.945, blue: 0.961, alpha: 1).cgColor
         buttonImage.layer.backgroundColor = UIColor(red: 0.937, green: 0.945, blue: 0.961, alpha: 1).cgColor
         buttonImage.layer.cornerRadius = 6
         buttonName.textColor = UIColor(red: 0.118, green: 0.141, blue: 0.184, alpha: 1)

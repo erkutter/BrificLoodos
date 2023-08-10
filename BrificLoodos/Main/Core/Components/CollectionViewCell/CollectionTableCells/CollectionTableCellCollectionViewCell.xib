@@ -17,12 +17,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="361" height="64"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" id="NK4-lX-Nbi">
+                    <view contentMode="scaleAspectFill" id="NK4-lX-Nbi">
                         <rect key="frame" x="0.0" y="0.0" width="361" height="64"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cux-2g-er2">
-                                <rect key="frame" x="91" y="22" width="45" height="21"/>
+                                <rect key="frame" x="64" y="22" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="tUn-8D-GaP" firstAttribute="top" secondItem="NK4-lX-Nbi" secondAttribute="top" constant="20" symbolic="YES" id="2VP-Vk-DVK"/>
                             <constraint firstAttribute="bottom" secondItem="tUn-8D-GaP" secondAttribute="bottom" constant="20" symbolic="YES" id="4Z9-54-bij"/>
@@ -60,7 +60,7 @@
                             <constraint firstAttribute="bottom" secondItem="HJC-uH-saT" secondAttribute="bottom" constant="12" id="Hdd-IB-1It"/>
                             <constraint firstAttribute="bottom" secondItem="Cux-2g-er2" secondAttribute="bottom" constant="21" id="LAE-OU-KBf"/>
                             <constraint firstItem="HJC-uH-saT" firstAttribute="leading" secondItem="NK4-lX-Nbi" secondAttribute="leading" constant="12" id="Lll-dJ-N0t"/>
-                            <constraint firstItem="Cux-2g-er2" firstAttribute="leading" secondItem="HJC-uH-saT" secondAttribute="trailing" constant="39" id="hBO-co-GlV"/>
+                            <constraint firstItem="Cux-2g-er2" firstAttribute="leading" secondItem="HJC-uH-saT" secondAttribute="trailing" constant="12" id="hBO-co-GlV"/>
                             <constraint firstItem="Cux-2g-er2" firstAttribute="top" secondItem="NK4-lX-Nbi" secondAttribute="top" constant="22" id="nWv-1P-qGS"/>
                             <constraint firstItem="HJC-uH-saT" firstAttribute="top" secondItem="NK4-lX-Nbi" secondAttribute="top" constant="12" id="peA-4f-cjl"/>
                             <constraint firstItem="tUn-8D-GaP" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Cux-2g-er2" secondAttribute="trailing" constant="189" id="qYo-ha-6hh"/>
@@ -68,7 +68,6 @@
                     </view>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="NK4-lX-Nbi" secondAttribute="trailing" id="AQ2-KS-apB"/>
                 <constraint firstAttribute="bottom" secondItem="NK4-lX-Nbi" secondAttribute="bottom" id="IsW-kx-5qe"/>
@@ -79,7 +78,7 @@
                 <outlet property="buttonImage" destination="HJC-uH-saT" id="KS3-bm-sQW"/>
                 <outlet property="buttonImageView" destination="lvx-3t-FiF" id="bdd-6U-b8v"/>
                 <outlet property="buttonName" destination="Cux-2g-er2" id="P2A-xS-IuE"/>
-                <outlet property="collectionView" destination="NK4-lX-Nbi" id="med-7S-fZX"/>
+                <outlet property="colView" destination="NK4-lX-Nbi" id="b32-nQ-y75"/>
             </connections>
             <point key="canvasLocation" x="93.89312977099236" y="19.718309859154932"/>
         </collectionViewCell>
