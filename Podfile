@@ -7,5 +7,4 @@ target 'BrificLoodos' do
 
   # Pods for BrificLoodos
 pod 'Alamofire'
-
 end

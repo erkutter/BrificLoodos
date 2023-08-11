@@ -207,13 +207,25 @@ class EditProfileViewController: UIViewController {
             return
         }
         
-        UserService().updateUserData(name: nameText, surname: surnameText, gender: genderSegment, birthday: birthText, email: emailText) { [weak self] success, errorMessage in
+        APIClient.updateCustomerData(name: nameText, surname: surnameText, gender: genderSegment, birthday: birthText, email: emailText) { [weak self] success, errorMessage in
+            DispatchQueue.main.async {
+                if success {
+                    self?.showAlertWithMessage("User information updated")
+                } else {
+                    print(errorMessage ?? "")
+                }
+                self?.getUserInfo()
+            }
+        }
+        
+        /*UserService().updateUserData(name: nameText, surname: surnameText, gender: genderSegment, birthday: birthText, email: emailText) { [weak self] success, errorMessage in
             DispatchQueue.main.async {
                 if success {
                     self?.showAlertWithMessage("User information updated")
                 }
                 self?.getUserInfo()
             }
-        }
+        }*/
+        
     }
 }

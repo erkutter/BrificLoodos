@@ -29,7 +29,6 @@
 		9A61B6FD2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A61B6FB2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift */; };
 		9A61B6FE2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A61B6FC2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib */; };
 		9A7003FE2A80C6BB00FC2094 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7003FD2A80C6BB00FC2094 /* Security.framework */; };
-		9A7004012A80C6FE00FC2094 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004002A80C6FE00FC2094 /* Constants.swift */; };
 		9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */; };
 		9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004072A81308A00FC2094 /* MyBrificViewController.swift */; };
 		9A70040A2A81308A00FC2094 /* MyBrificViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7004082A81308A00FC2094 /* MyBrificViewController.xib */; };
@@ -55,6 +54,10 @@
 		9AD86CA12A8516B0009676AA /* FooterCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86C9F2A8516B0009676AA /* FooterCollectionViewCell.xib */; };
 		9AD86CA52A851969009676AA /* RemoveButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86CA32A851969009676AA /* RemoveButtonCollectionViewCell.swift */; };
 		9AD86CA62A851969009676AA /* RemoveButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86CA42A851969009676AA /* RemoveButtonCollectionViewCell.xib */; };
+		9AFE17192A86212600F60F85 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE17182A86212600F60F85 /* APIRouter.swift */; };
+		9AFE171B2A86364400F60F85 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE171A2A86364400F60F85 /* Constants.swift */; };
+		9AFE17202A863B2C00F60F85 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE171F2A863B2C00F60F85 /* APIClient.swift */; };
+		9AFE17222A86684300F60F85 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE17212A86684300F60F85 /* CustomerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,7 +87,6 @@
 		9A61B6FB2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A61B6FC2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A7003FD2A80C6BB00FC2094 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		9A7004002A80C6FE00FC2094 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
 		9A7004072A81308A00FC2094 /* MyBrificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBrificViewController.swift; sourceTree = "<group>"; };
 		9A7004082A81308A00FC2094 /* MyBrificViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBrificViewController.xib; sourceTree = "<group>"; };
@@ -110,6 +112,10 @@
 		9AD86C9F2A8516B0009676AA /* FooterCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AD86CA32A851969009676AA /* RemoveButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AD86CA42A851969009676AA /* RemoveButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemoveButtonCollectionViewCell.xib; sourceTree = "<group>"; };
+		9AFE17182A86212600F60F85 /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		9AFE171A2A86364400F60F85 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9AFE171F2A863B2C00F60F85 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9AFE17212A86684300F60F85 /* CustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +201,7 @@
 		9A4E6F512A7832F4003DF923 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9AFE171C2A863AAB00F60F85 /* Model */,
 				9A8C5F3A2A7D2E3A001E5818 /* Service */,
 				9A4E6F5D2A7836BE003DF923 /* App */,
 				9A4E6F572A78365A003DF923 /* Core */,
@@ -311,7 +318,6 @@
 		9A7003FF2A80C6DE00FC2094 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				9A7004002A80C6FE00FC2094 /* Constants.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -344,6 +350,9 @@
 		9A8C5F3A2A7D2E3A001E5818 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9AFE171A2A86364400F60F85 /* Constants.swift */,
+				9AFE17182A86212600F60F85 /* APIRouter.swift */,
+				9AFE171F2A863B2C00F60F85 /* APIClient.swift */,
 				9A8C5F3E2A7D3364001E5818 /* UserService.swift */,
 			);
 			name = Service;
@@ -462,6 +471,14 @@
 				9AD86CA42A851969009676AA /* RemoveButtonCollectionViewCell.xib */,
 			);
 			path = CollectionRemoveButton;
+			sourceTree = "<group>";
+		};
+		9AFE171C2A863AAB00F60F85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9AFE17212A86684300F60F85 /* CustomerModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -601,9 +618,11 @@
 				9A9D89892A7B870D00C69BD8 /* EditProfileViewController.swift in Sources */,
 				9AD86CA02A8516B0009676AA /* FooterCollectionViewCell.swift in Sources */,
 				9A4E6F6F2A783D6A003DF923 /* ProfileViiewController.swift in Sources */,
+				9AFE17192A86212600F60F85 /* APIRouter.swift in Sources */,
 				9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */,
 				9AADBB2E2A83A93E0002877B /* DrivingModeCollectionViewCell.swift in Sources */,
 				9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */,
+				9AFE171B2A86364400F60F85 /* Constants.swift in Sources */,
 				9AADBB372A83BC370002877B /* BrificUnitsCollectionViewCell.swift in Sources */,
 				9A4E6F6B2A783D5D003DF923 /* MarketViewController.swift in Sources */,
 				9AD86CA52A851969009676AA /* RemoveButtonCollectionViewCell.swift in Sources */,
@@ -611,6 +630,8 @@
 				9A232CC62A8230F700034FF6 /* AddedMyBrificViewController.swift in Sources */,
 				9A61B6FD2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift in Sources */,
 				9AD86C9B2A8503A1009676AA /* ButtonCollectionViewCell.swift in Sources */,
+				9AFE17202A863B2C00F60F85 /* APIClient.swift in Sources */,
+				9AFE17222A86684300F60F85 /* CustomerModel.swift in Sources */,
 				9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */,
 				9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */,
 				9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */,
@@ -621,7 +642,6 @@
 				9AADBB282A836F480002877B /* PropertiesCollectionViewCell.swift in Sources */,
 				9A4E6F732A783D76003DF923 /* MapViewController.swift in Sources */,
 				9A4E6F772A783D83003DF923 /* SocialViewController.swift in Sources */,
-				9A7004012A80C6FE00FC2094 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

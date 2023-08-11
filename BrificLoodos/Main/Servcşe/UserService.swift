@@ -23,9 +23,8 @@ struct UserData: Codable {
 
 class UserService {
     func fetchUserData(completion: @escaping (Result<UserData.Payload, Error>) -> Void) {
-        Constants().saveToken()
+        let savedToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6ImF0K2p3dCJ9.eyJzdWIiOiI1MDQiLCJuYW1lIjoiOTA1MzExMDAxMDExIiwib2lfcHJzdCI6ImJyaWZpY19tb2JpbGVfYXBwIiwib2lfYXVfaWQiOiI4NWEzNTQ5Ny0zMzRjLTRiYmQtODVlZC1iZGYzMzMxN2JkM2EiLCJjbGllbnRfaWQiOiJicmlmaWNfbW9iaWxlX2FwcCIsIm9pX3Rrbl9pZCI6IjhiZTEwMmFlLTE0ODgtNDMwMS1iYmNlLWVjMDczMzQ4ZmE3ZiIsImF1ZCI6WyJvcGVuaWQiLCJvZmZsaW5lX2FjY2VzcyIsImVtYWlsIl0sInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIGVtYWlsIiwianRpIjoiZTUxMWQxNDItZDUyMi00OTVkLThlYTMtOWE1Y2MzMjM3ZmZiIiwiZXhwIjoxNjkyNzcyMTI4LCJpc3MiOiJodHRwczovL2F1dGgtZGV2LmJyaWZpYy5jb20vIiwiaWF0IjoxNjkwOTcyMTI4fQ.HT26DmIBckJnLAZNxp0GvnQ7INng6xA_gcURvpZGVZ0"
         let URL = "https://api-dev.brific.com/api/v1/cdh/customer/profile"
-        if let savedToken = UserDefaults.standard.string(forKey: "token") {
             let headers: HTTPHeaders = ["Authorization": "Bearer \(savedToken)"]
             AF.request(URL, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers, interceptor: nil)
                 .responseData { resp in
@@ -42,13 +41,11 @@ class UserService {
                         print("\(error.localizedDescription)")
                     }
                 }
-        } else {
-            print("error")
-        }
+        
     }
     
     func updateUserData(name:String, surname:String, gender: String, birthday: String, email: String,completion: @escaping (Bool, String?) -> Void){
-        Constants().saveToken()
+let savedToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6ImF0K2p3dCJ9.eyJzdWIiOiI1MDQiLCJuYW1lIjoiOTA1MzExMDAxMDExIiwib2lfcHJzdCI6ImJyaWZpY19tb2JpbGVfYXBwIiwib2lfYXVfaWQiOiI4NWEzNTQ5Ny0zMzRjLTRiYmQtODVlZC1iZGYzMzMxN2JkM2EiLCJjbGllbnRfaWQiOiJicmlmaWNfbW9iaWxlX2FwcCIsIm9pX3Rrbl9pZCI6IjhiZTEwMmFlLTE0ODgtNDMwMS1iYmNlLWVjMDczMzQ4ZmE3ZiIsImF1ZCI6WyJvcGVuaWQiLCJvZmZsaW5lX2FjY2VzcyIsImVtYWlsIl0sInNjb3BlIjoib3BlbmlkIG9mZmxpbmVfYWNjZXNzIGVtYWlsIiwianRpIjoiZTUxMWQxNDItZDUyMi00OTVkLThlYTMtOWE1Y2MzMjM3ZmZiIiwiZXhwIjoxNjkyNzcyMTI4LCJpc3MiOiJodHRwczovL2F1dGgtZGV2LmJyaWZpYy5jb20vIiwiaWF0IjoxNjkwOTcyMTI4fQ.HT26DmIBckJnLAZNxp0GvnQ7INng6xA_gcURvpZGVZ0"
         let params: Parameters = [
             "name": name,
             "surname": surname,
@@ -57,7 +54,6 @@ class UserService {
             "email": email
         ]
         let URL = "https://api-dev.brific.com/api/v1/cdh/customer"
-        if let savedToken = UserDefaults.standard.string(forKey: "token") {
             let headers: HTTPHeaders = ["Authorization": "Bearer \(savedToken)"]
             AF.request(URL,method: .put, parameters: params, encoding: JSONEncoding.default,headers: headers).responseData() { response in
                 switch response.result {
@@ -86,9 +82,8 @@ class UserService {
                     completion(false, "API request failed")
                 }
             }
-        }
+        
         
     }
 }
-
 

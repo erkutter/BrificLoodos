@@ -476,5 +476,652 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72532A3C-D065-44C0-A777-AD9747766E38"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "updateUserData(name:surname:gender:birthday:email:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "558487B0-A4C5-4359-8BCB-2AC356DD2F23"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "210"
+            endingLineNumber = "210"
+            landmarkName = "setUserInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "558487B0-A4C5-4359-8BCB-2AC356DD2F23 - 54138a5eca44ff7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "3474">
+               </Location>
+               <Location
+                  uuid = "558487B0-A4C5-4359-8BCB-2AC356DD2F23 - c38c2b4fedc3b268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; () in BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "229">
+               </Location>
+               <Location
+                  uuid = "558487B0-A4C5-4359-8BCB-2AC356DD2F23 - 22b31fe1ab570be1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; () in BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "210"
+                  endingLineNumber = "210"
+                  offsetFromSymbolStart = "129">
+               </Location>
+               <Location
+                  uuid = "558487B0-A4C5-4359-8BCB-2AC356DD2F23 - 54138a5eca44fded"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "3492">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F222952-9451-499A-9C11-043D3B83BBC7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "updateCustomerData(name:surname:gender:birthday:email:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9F222952-9451-499A-9C11-043D3B83BBC7 - c148ceadc401ca48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static BrificLoodos.APIClient.updateCustomerData(name: Swift.String, surname: Swift.String, gender: Swift.String, birthday: Swift.String, email: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Servcs%CC%A7e/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "9F222952-9451-499A-9C11-043D3B83BBC7 - c148ceadc401ca69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static BrificLoodos.APIClient.updateCustomerData(name: Swift.String, surname: Swift.String, gender: Swift.String, birthday: Swift.String, email: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Servcs%CC%A7e/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "858F6AC3-CB81-4546-8820-2E6D13AD15E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "updateCustomerData(name:surname:gender:birthday:email:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4EDC11AC-378E-4DB2-B157-A52BCA9568CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "updateCustomerData(name:surname:gender:birthday:email:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2486E8B1-CD32-49B4-9FA9-6A1C849AF0AE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "setUserInfo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99BF0FA5-3F26-4EB9-ADA6-DE8FAF765027"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "213"
+            endingLineNumber = "213"
+            landmarkName = "setUserInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "99BF0FA5-3F26-4EB9-ADA6-DE8FAF765027 - 22b31fe1ab57087e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; () in BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "213"
+                  endingLineNumber = "213"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "99BF0FA5-3F26-4EB9-ADA6-DE8FAF765027 - 54138a5eca44fded"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "221"
+                  endingLineNumber = "221"
+                  offsetFromSymbolStart = "3492">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "159F64F9-D247-40D3-A092-1F5EF94A454F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "setUserInfo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E49E7E0-C3FE-4E8A-9A6C-462E6905E61E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "updateUserData(name:surname:gender:birthday:email:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F49FB67-8EBD-414D-B572-029E178CEAC9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "parameters"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1BF4812-AA79-4823-BBFD-7E27475C9BCF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "parameters"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EE5F22F7-EF52-403B-A6E9-6264ACCE999D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "parameters"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C28F933-320C-426B-A300-E86A4BDC97B8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "parameters"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8F16EBF6-50FB-41D8-B40A-BDF3987E949A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "setUserInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8F16EBF6-50FB-41D8-B40A-BDF3987E949A - 54138a5eca44feb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "687">
+               </Location>
+               <Location
+                  uuid = "8F16EBF6-50FB-41D8-B40A-BDF3987E949A - 54138a5eca44feb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "903">
+               </Location>
+               <Location
+                  uuid = "8F16EBF6-50FB-41D8-B40A-BDF3987E949A - 54138a5eca44feb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "3780">
+               </Location>
+               <Location
+                  uuid = "8F16EBF6-50FB-41D8-B40A-BDF3987E949A - 54138a5eca44feb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "3866">
+               </Location>
+               <Location
+                  uuid = "8F16EBF6-50FB-41D8-B40A-BDF3987E949A - 54138a5eca44feb0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "200"
+                  endingLineNumber = "200"
+                  offsetFromSymbolStart = "3904">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F041AC4-E9B8-484E-8B65-E559FC36BBA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "204"
+            endingLineNumber = "204"
+            landmarkName = "setUserInfo()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F041AC4-E9B8-484E-8B65-E559FC36BBA5 - 54138a5eca44fe3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "2945">
+               </Location>
+               <Location
+                  uuid = "7F041AC4-E9B8-484E-8B65-E559FC36BBA5 - 54138a5eca44fe3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrificLoodos.EditProfileViewController.setUserInfo() -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "204"
+                  endingLineNumber = "204"
+                  offsetFromSymbolStart = "3161">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67EF0CCC-8475-4949-A284-4FDD4A7135CF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "asURLRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0124E1ED-D1FE-4E97-BC2B-52BC8987EA03"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "updateCustomerData(name:surname:gender:birthday:email:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0124E1ED-D1FE-4E97-BC2B-52BC8987EA03 - c148ceadc401ca48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static BrificLoodos.APIClient.updateCustomerData(name: Swift.String, surname: Swift.String, gender: Swift.String, birthday: Swift.String, email: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Servcs%CC%A7e/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "0124E1ED-D1FE-4E97-BC2B-52BC8987EA03 - f5cc8da155ef322c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;BrificLoodos.CustomerModel, Alamofire.AFError&gt;) -&gt; () in static BrificLoodos.APIClient.updateCustomerData(name: Swift.String, surname: Swift.String, gender: Swift.String, birthday: Swift.String, email: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Servcs%CC%A7e/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "0124E1ED-D1FE-4E97-BC2B-52BC8987EA03 - 651787c3e26b5586"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;BrificLoodos.CustomerModel.Payload, Alamofire.AFError&gt;) -&gt; () in static BrificLoodos.APIClient.updateCustomerData(name: Swift.String, surname: Swift.String, gender: Swift.String, birthday: Swift.String, email: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Servcs%CC%A7e/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "0124E1ED-D1FE-4E97-BC2B-52BC8987EA03 - 2529f11edd9ca2e6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Foundation.Data, Alamofire.AFError&gt;) -&gt; () in static BrificLoodos.APIClient.updateCustomerData(name: Swift.String, surname: Swift.String, gender: Swift.String, birthday: Swift.String, email: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Servcs%CC%A7e/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "297">
+               </Location>
+               <Location
+                  uuid = "0124E1ED-D1FE-4E97-BC2B-52BC8987EA03 - 651787c3e26b5586"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;BrificLoodos.CustomerModel.Payload, Alamofire.AFError&gt;) -&gt; () in static BrificLoodos.APIClient.updateCustomerData(name: Swift.String, surname: Swift.String, gender: Swift.String, birthday: Swift.String, email: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Servcs%CC%A7e/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "280">
+               </Location>
+               <Location
+                  uuid = "0124E1ED-D1FE-4E97-BC2B-52BC8987EA03 - f5cc8da155ef322c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;BrificLoodos.CustomerModel, Alamofire.AFError&gt;) -&gt; () in static BrificLoodos.APIClient.updateCustomerData(name: Swift.String, surname: Swift.String, gender: Swift.String, birthday: Swift.String, email: Swift.String, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "BrificLoodos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/erkutter/Desktop/BrificLoodos/BrificLoodos/Main/Servcs%CC%A7e/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB7100F2-C838-4FB8-BB23-435063EA7E8D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "asURLRequest()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22723571-CFBD-4F53-AFBC-313220E45998"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Servcs&#x327;e/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "updateCustomerData(name:surname:gender:birthday:email:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8261F6E4-7608-428B-A0A4-52B58A7D79F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrificLoodos/Main/Core/Screens/Profile/EditProfile/EditProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "215"
+            endingLineNumber = "215"
+            landmarkName = "setUserInfo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
