@@ -12,11 +12,11 @@ struct CustomerModel: Decodable {
     
     struct Payload: Codable {
         let id: String
-        let name: String
-        let surname: String
-        let phoneNumber: String
-        let gender: String
-        let email: String
-        let birthday: String
+        var name: String
+        var surname: String
+        var phoneNumber: String
+        var gender: String
+        var email: String
+        var birthday: String
     }
 }

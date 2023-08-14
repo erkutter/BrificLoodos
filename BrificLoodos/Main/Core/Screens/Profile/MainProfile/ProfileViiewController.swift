@@ -11,6 +11,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     let indicator = UIActivityIndicatorView(style: .large)
     var haveBrific = false
     var productID: String?
+    let currentUser = EditProfileViewController()
     
     @IBOutlet weak var profileContainerView: UIView!
     
@@ -36,19 +37,20 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getUserInfo()
-        
+        currentUser.getCustomerInfo() {
+            self.nameLabel.text = self.currentUser.user.getCustomerName()
+        }
+        setupUI()
+    }
+    
+    private func setupUI() {
         view.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
-        
         nameLabel.font = UIFont(name: "Poppins-Semibold", size: 16)
         editProfileButton.titleLabel?.font = UIFont(name: "Poppins-Regular", size: 12)
-        
         profileContainerView.layer.cornerRadius = 40
         //tableView
         profileTableView.dataSource = self
-        
         profileTableView.delegate = self
-        
         //user image
         userImageContainer.layer.cornerRadius = userImageContainer.frame.width / 2
         let nib = UINib(nibName: "CustomTableViewCell", bundle: nil)
@@ -58,8 +60,6 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         profileTableView.contentInset = UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
         profileTableView.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
         profileTableView.rowHeight = UITableView.automaticDimension
-        //logout button container
-        
         //logout button
         logOutButton.layer.cornerRadius = 12
         logOutButton.layer.borderWidth = 1
@@ -70,11 +70,6 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         logOutButton.layer.shadowOffset = CGSize(width: 0, height: 4)
         dummyImage.layer.cornerRadius = dummyImage.frame.size.width / 2
         dummyImage.clipsToBounds = true
-        
-    }
-    
-    override func viewDidLayoutSubviews() {
-        
     }
     
     @IBAction func editProfileTapped(_ sender: UIButton) {
@@ -102,6 +97,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         footerView.backgroundColor = UIColor.clear
         return footerView
     }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 0
     }
@@ -138,54 +134,22 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        getUserInfo()
-        
         super.viewWillAppear(animated)
-        
         self.navigationController?.isNavigationBarHidden = true
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        getUserInfo()
-        
         super.viewWillDisappear(animated)
-        
         self.navigationController?.isNavigationBarHidden = false
     }
-    func getUserInfo() {
-        indicator.startAnimating()
-        indicator.color = .red
-        indicator.center = view.center
-        indicator.backgroundColor = .black
-        view.addSubview(indicator)
-        
-        APIClient.getCustomerData() { [weak self] result in
-            switch result {
-            case .success(let userData):
-                DispatchQueue.main.async {
-                    self?.nameLabel.text = userData.name+" "+userData.surname
-                }
-                self?.indicator.stopAnimating()
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    print("Error fetching user data: \(error.localizedDescription)")
-                }
-            }
-        }
-        
+    
+    func fillUserProduct() {
         APIClient.getCustomerProduct() { [weak self] result in
             switch result {
             case .success(let userData):
                 DispatchQueue.main.async {
-                    if userData.isEmpty {
-                        self?.haveBrific = false
-                    } else {
-                        self?.haveBrific = true
-                        self?.productID = userData.first!.id
-                    }
+                    self?.currentUser.user.setProducts(product: userData)
                 }
-                self?.indicator.stopAnimating()
             case .failure(let error):
                 DispatchQueue.main.async {
                     print("Error fetching user data: \(error.localizedDescription)")
@@ -204,5 +168,4 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         self.navigationController?.view.backgroundColor = .clear
         self.navigationItem.backBarButtonItem?.tintColor = UIColor.white
     }
-    
 }

@@ -8,6 +8,8 @@
 import UIKit
 
 class EditProfileViewController: UIViewController {
+    var user = User(customer: nil, product: nil)
+    
     let indicator = UIActivityIndicatorView(style: .large)
     
     @IBOutlet weak var genderContainer: UIView!
@@ -58,7 +60,12 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        getUserInfo()
+        getCustomerInfo() {
+            self.setupUI()
+        }
+    }
+    
+    private func setupUI() {
         profileContainerView.layer.cornerRadius = profileContainerView.frame.width / 2
         profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
         profileImage.clipsToBounds = true        //backgroundcolor
@@ -101,7 +108,6 @@ class EditProfileViewController: UIViewController {
         //mobilePhoneTextFieldCustomization
         mobilePhone.isUserInteractionEnabled = false
         mobilePhone.keyboardType = .numberPad
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -115,13 +121,14 @@ class EditProfileViewController: UIViewController {
     }
     
     @IBAction func saveChangesTapped(_ sender: Any) {
-        setUserInfo()
+        saveCustomerInfo()
     }
     
     func labelCustomization(_ label:UILabel) {
         label.font = UIFont(name: "Poppins-Regular", size: 12)
         label.textColor = UIColor(red: 0.157, green: 0.188, blue: 0.247, alpha: 1)
     }
+    
     func textFieldCustomization(_ textField:UITextField) {
         textField.layer.backgroundColor = UIColor(red: 0.97, green: 0.96, blue: 0.96, alpha: 1.00).cgColor
         textField.layer.cornerRadius = 8
@@ -151,35 +158,38 @@ class EditProfileViewController: UIViewController {
         genderControl.selectedSegmentTintColor = UIColor(red: 0.04, green: 0.24, blue: 1, alpha: 1)
     }
     
-    func getUserInfo() {
+    func fillCustomerInfo() {
         var segment: Int = 0
         indicator.startAnimating()
         indicator.color = .red
         indicator.center = view.center
         indicator.backgroundColor = .black
         view.addSubview(indicator)
+        if self.user.getCustomerGender() == "FEMALE" {
+            segment = 1
+        }
+        self.name.text = self.user.getCustomerName()
+        self.surname.text = self.user.getCustomerSurname()
+        self.mobilePhone.text = self.user.getCustomerPhoneNumber()
+        self.genderControl.selectedSegmentIndex = segment
+        self.dateOfBirth.text = self.user.getCustomerBirthday()
+        self.eMail.text = self.user.getCustomerEmail()
+        self.userNameLabel.text = (self.user.getCustomerName())+" "+(self.user.getCustomerSurname())
+        self.indicator.stopAnimating()
+    }
+    
+    func getCustomerInfo(completion: @escaping () -> Void) {
         APIClient.getCustomerData() {   [weak self] result in
-            switch result {
-            case .success(let userData):
-                if userData.gender == "FEMALE" {
-                    segment = 1
-                }
-                DispatchQueue.main.async {
-                    self?.name.text = userData.name
-                    self?.surname.text = userData.surname
-                    self?.mobilePhone.text = userData.phoneNumber
-                    self?.genderControl.selectedSegmentIndex = segment
-                    self?.dateOfBirth.text = userData.birthday
-                    self?.eMail.text = userData.email
-                    self?.userNameLabel.text = userData.name+" "+userData.surname
-                }
-                self?.indicator.stopAnimating()
-            case .failure(let error):
-                DispatchQueue.main.async {
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let userData):
+                    self?.user = User(customer: userData, product: [])
+                    self?.fillCustomerInfo()
+                    completion()
+                case .failure(let error):
                     print("Error fetching user data: \(error.localizedDescription)")
                 }
             }
-            
         }
     }
     
@@ -188,35 +198,32 @@ class EditProfileViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
-        
     }
     
-    func setUserInfo(){
+    func saveCustomerInfo() {
+        setUserInfo()
         
-        indicator.startAnimating()
-        indicator.color = .red
-        indicator.center = view.center
-        indicator.backgroundColor = .black
-        
-        guard let nameText = name.text, !nameText.isEmpty,
-              let birthText = dateOfBirth.text, !birthText.isEmpty,
-              let surnameText = surname.text, !surnameText.isEmpty,
-              let genderSegment = genderControl.titleForSegment(at: genderControl.selectedSegmentIndex)?.uppercased(),
-              let emailText = eMail.text, !emailText.isEmpty
-        else {
-            print("Please fill in all required fields.")
-            return
-        }
-        
-        APIClient.updateCustomerData(name: nameText, surname: surnameText, gender: genderSegment, birthday: birthText, email: emailText) { [weak self] success, errorMessage in
+        APIClient.updateCustomerData(name: self.user.getCustomerName(), surname: self.user.getCustomerSurname(), gender: self.user.getCustomerGender(), birthday: self.user.getCustomerBirthday(), email: self.user.getCustomerEmail()) { [weak self] success, errorMessage in
             DispatchQueue.main.async {
                 if success {
                     self?.showAlertWithMessage("User information updated")
                 } else {
                     print(errorMessage ?? "")
                 }
-                self?.getUserInfo()
+                self?.fillCustomerInfo()
             }
         }
+    }
+    
+    func setUserInfo(){
+        indicator.startAnimating()
+        indicator.color = .red
+        indicator.center = view.center
+        indicator.backgroundColor = .black
+        self.user.setCustomerName(name: name.text!)
+        self.user.setCustomerSurname(surname: surname.text!)
+        self.user.setCustomerBirthday(birthday: dateOfBirth.text!)
+        self.user.setCustomerGender(gender: (genderControl.titleForSegment(at: genderControl.selectedSegmentIndex)?.uppercased())!)
+        self.user.setCustomerEmail(email: eMail.text!)
     }
 }

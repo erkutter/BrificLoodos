@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 class APIClient {
+    
     static func updateCustomerData(name:String, surname:String, gender: String, birthday: String, email: String,completion: @escaping (Bool, String?) -> Void) {
         AF.request( APIRouter.customer(name: name, surname: surname, gender: gender, birthday: birthday, email: email)).responseDecodable { (response: DataResponse<CustomerModel,AFError>) in
             switch response.result {
