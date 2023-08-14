@@ -158,7 +158,7 @@ class EditProfileViewController: UIViewController {
         indicator.center = view.center
         indicator.backgroundColor = .black
         view.addSubview(indicator)
-        UserService().fetchUserData { [weak self] result in
+        APIClient.getCustomerData() {   [weak self] result in
             switch result {
             case .success(let userData):
                 if userData.gender == "FEMALE" {
@@ -179,6 +179,7 @@ class EditProfileViewController: UIViewController {
                     print("Error fetching user data: \(error.localizedDescription)")
                 }
             }
+            
         }
     }
     
@@ -217,15 +218,5 @@ class EditProfileViewController: UIViewController {
                 self?.getUserInfo()
             }
         }
-        
-        /*UserService().updateUserData(name: nameText, surname: surnameText, gender: genderSegment, birthday: birthText, email: emailText) { [weak self] success, errorMessage in
-            DispatchQueue.main.async {
-                if success {
-                    self?.showAlertWithMessage("User information updated")
-                }
-                self?.getUserInfo()
-            }
-        }*/
-        
     }
 }

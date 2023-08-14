@@ -19,7 +19,6 @@ struct Constants {
         static let gender = "gender"
         static let birthday = "birthday"
         static let email = "email"
-        
     }
 }
 

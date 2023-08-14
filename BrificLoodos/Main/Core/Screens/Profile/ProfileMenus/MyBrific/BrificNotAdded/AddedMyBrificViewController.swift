@@ -8,6 +8,7 @@
 import UIKit
 
 class AddedMyBrificViewController: UIViewController {
+    var productID: String?
     
     @IBOutlet weak var aliasLabel: UILabel!
     @IBOutlet weak var brificName: UITextField!
@@ -44,8 +45,6 @@ class AddedMyBrificViewController: UIViewController {
         collectionView.register(UINib(nibName: "ButtonCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell8")
         collectionView.register(UINib(nibName: "FooterCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell9")
         collectionView.register(UINib(nibName: "RemoveButtonCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cell10")
-
-
     }
 }
 
@@ -104,6 +103,7 @@ extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionVi
             return cell9 ?? UICollectionViewCell()
         } else  {
             let cell10 = collectionView.dequeueReusableCell(withReuseIdentifier: "cell10", for: indexPath) as? RemoveButtonCollectionViewCell
+            cell10?.removeButton.addTarget(self, action: #selector(removeButtonPressed(sender:)), for: .touchUpInside)
             
             return cell10 ?? UICollectionViewCell()
         }
@@ -149,4 +149,25 @@ extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionVi
         return CGSize(width: 361,height: 50)
     }
     
+    func showAlertWithMessage(_ message: String) {
+        let alertController = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    @objc func removeButtonPressed(sender: UIButton) {
+        APIClient.deleteCustomerProduct(id: (productID)!) { (success, errorMessage) in
+            switch success {
+            case true:
+                DispatchQueue.main.async {
+                    self.showAlertWithMessage("Product deleted successfully")
+                }
+            case false:
+                if let errorMessage = errorMessage {
+                    print("Error deleting product: \(errorMessage)")
+                }
+            }
+        }
+    }
 }

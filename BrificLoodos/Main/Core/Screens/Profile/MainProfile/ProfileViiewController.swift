@@ -9,7 +9,8 @@ import UIKit
 
 class ProfileViiewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let indicator = UIActivityIndicatorView(style: .large)
-    var haveBrific = true
+    var haveBrific = false
+    var productID: String?
     
     @IBOutlet weak var profileContainerView: UIView!
     
@@ -75,6 +76,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewDidLayoutSubviews() {
         
     }
+    
     @IBAction func editProfileTapped(_ sender: UIButton) {
         styleNavBarWithTitle("Edit Profile")
         let editProfileViewController = EditProfileViewController(nibName: "EditProfileViewController", bundle: nil)
@@ -126,6 +128,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
             let addedMyBrificViewController = AddedMyBrificViewController(nibName: "AddedMyBrificViewController", bundle: nil)
             let myBrificViewController = MyBrificViewController(nibName: "MyBrificViewController", bundle: nil)
             if haveBrific {
+                addedMyBrificViewController.productID = self.productID
                 navigationController?.pushViewController(addedMyBrificViewController, animated: true)
             } else {
                 navigationController?.pushViewController(myBrificViewController, animated: true)
@@ -156,11 +159,31 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         indicator.center = view.center
         indicator.backgroundColor = .black
         view.addSubview(indicator)
-        UserService().fetchUserData { [weak self] result in
+        
+        APIClient.getCustomerData() { [weak self] result in
             switch result {
             case .success(let userData):
                 DispatchQueue.main.async {
                     self?.nameLabel.text = userData.name+" "+userData.surname
+                }
+                self?.indicator.stopAnimating()
+            case .failure(let error):
+                DispatchQueue.main.async {
+                    print("Error fetching user data: \(error.localizedDescription)")
+                }
+            }
+        }
+        
+        APIClient.getCustomerProduct() { [weak self] result in
+            switch result {
+            case .success(let userData):
+                DispatchQueue.main.async {
+                    if userData.isEmpty {
+                        self?.haveBrific = false
+                    } else {
+                        self?.haveBrific = true
+                        self?.productID = userData.first!.id
+                    }
                 }
                 self?.indicator.stopAnimating()
             case .failure(let error):

@@ -12,6 +12,8 @@ enum APIRouter: URLRequestConvertible {
     
     case customer(name: String, surname: String, gender: String, birthday: String, email: String)
     case profile
+    case product
+    case deleteProd(id:String)
     
     private var method: HTTPMethod {
         switch self {
@@ -19,6 +21,10 @@ enum APIRouter: URLRequestConvertible {
             return .put
         case .profile:
             return .get
+        case .product:
+            return .get
+        case .deleteProd:
+            return .delete
         }
     }
     
@@ -28,6 +34,10 @@ enum APIRouter: URLRequestConvertible {
             return "/customer"
         case .profile:
             return "/customer/profile"
+        case .product:
+            return "/products"
+        case .deleteProd(let id):
+            return "/product/\(id)"
         }
     }
     
@@ -43,6 +53,10 @@ enum APIRouter: URLRequestConvertible {
             ]
         case .profile:
             return nil
+        case .product:
+            return nil
+        case .deleteProd:
+            return nil
         }
     }
     
@@ -52,14 +66,9 @@ enum APIRouter: URLRequestConvertible {
             throw AFError.invalidURL(url: Constants.ProductionServer.baseURL)
         }
         var urlRequest = URLRequest(url: url.appendingPathComponent(path))
-        // HTTP Method
         urlRequest.httpMethod = method.rawValue
-        // Common Headers
-        //application/json - bearer token
         urlRequest.setValue("\(HTTPHeaderField.bearer.rawValue) \(HTTPHeaderField.token.rawValue)", forHTTPHeaderField: HTTPHeaderField.authentication.rawValue)
-        //Content-Type
         urlRequest.setValue(ContentType.json.rawValue, forHTTPHeaderField: ContentType.type.rawValue)
-        // Parameters
         if let parameters = parameters {
             do {
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: [])

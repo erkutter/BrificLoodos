@@ -32,7 +32,6 @@
 		9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */; };
 		9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004072A81308A00FC2094 /* MyBrificViewController.swift */; };
 		9A70040A2A81308A00FC2094 /* MyBrificViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A7004082A81308A00FC2094 /* MyBrificViewController.xib */; };
-		9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8C5F3E2A7D3364001E5818 /* UserService.swift */; };
 		9A9D89662A79915C00C69BD8 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */; };
 		9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */; };
 		9A9D89722A79B0CA00C69BD8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A9D89702A79B0CA00C69BD8 /* CustomTableViewCell.swift */; };
@@ -48,6 +47,7 @@
 		9AADBB2F2A83A93E0002877B /* DrivingModeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */; };
 		9AADBB372A83BC370002877B /* BrificUnitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AADBB352A83BC370002877B /* BrificUnitsCollectionViewCell.swift */; };
 		9AADBB382A83BC370002877B /* BrificUnitsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */; };
+		9ACD6DBA2A8A19D40058AF08 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6DB92A8A19D40058AF08 /* ProductModel.swift */; };
 		9AD86C9B2A8503A1009676AA /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86C992A8503A1009676AA /* ButtonCollectionViewCell.swift */; };
 		9AD86C9C2A8503A1009676AA /* ButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86C9A2A8503A1009676AA /* ButtonCollectionViewCell.xib */; };
 		9AD86CA02A8516B0009676AA /* FooterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86C9E2A8516B0009676AA /* FooterCollectionViewCell.swift */; };
@@ -90,7 +90,6 @@
 		9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
 		9A7004072A81308A00FC2094 /* MyBrificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBrificViewController.swift; sourceTree = "<group>"; };
 		9A7004082A81308A00FC2094 /* MyBrificViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyBrificViewController.xib; sourceTree = "<group>"; };
-		9A8C5F3E2A7D3364001E5818 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		9A9D89652A79915C00C69BD8 /* CustomTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomTabBar.swift; path = ../../../../../../.Trash/CustomTabBar.swift; sourceTree = "<group>"; };
 		9A9D89672A7991A300C69BD8 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		9A9D89702A79B0CA00C69BD8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		9AADBB2D2A83A93E0002877B /* DrivingModeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DrivingModeCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AADBB352A83BC370002877B /* BrificUnitsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrificUnitsCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrificUnitsCollectionViewCell.xib; sourceTree = "<group>"; };
+		9ACD6DB92A8A19D40058AF08 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		9AD86C992A8503A1009676AA /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AD86C9A2A8503A1009676AA /* ButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AD86C9E2A8516B0009676AA /* FooterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -353,7 +353,6 @@
 				9AFE171A2A86364400F60F85 /* Constants.swift */,
 				9AFE17182A86212600F60F85 /* APIRouter.swift */,
 				9AFE171F2A863B2C00F60F85 /* APIClient.swift */,
-				9A8C5F3E2A7D3364001E5818 /* UserService.swift */,
 			);
 			name = Service;
 			path = "Servcşe";
@@ -477,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				9AFE17212A86684300F60F85 /* CustomerModel.swift */,
+				9ACD6DB92A8A19D40058AF08 /* ProductModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -633,7 +633,7 @@
 				9AFE17202A863B2C00F60F85 /* APIClient.swift in Sources */,
 				9AFE17222A86684300F60F85 /* CustomerModel.swift in Sources */,
 				9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */,
-				9A8C5F3F2A7D3364001E5818 /* UserService.swift in Sources */,
+				9ACD6DBA2A8A19D40058AF08 /* ProductModel.swift in Sources */,
 				9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */,
 				9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */,
 				9A61B6F82A84C8AE00A55281 /* LightButtonCollectionViewCell.swift in Sources */,
