@@ -8,7 +8,6 @@
 import UIKit
 
 class EditProfileViewController: UIViewController {
-    var user = User(customer: nil, product: nil)
     
     let indicator = UIActivityIndicatorView(style: .large)
     
@@ -60,9 +59,8 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        getCustomerInfo() {
-            self.setupUI()
-        }
+        fillCustomerInfo()
+        setupUI()
     }
     
     private func setupUI() {
@@ -120,9 +118,9 @@ class EditProfileViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = false
     }
     
-    @IBAction func saveChangesTapped(_ sender: Any) {
-        saveCustomerInfo()
-    }
+    /*  @IBAction func saveChangesTapped(_ sender: Any) {
+     saveCustomerInfo()
+     }*/
     
     func labelCustomization(_ label:UILabel) {
         label.font = UIFont(name: "Poppins-Regular", size: 12)
@@ -165,33 +163,20 @@ class EditProfileViewController: UIViewController {
         indicator.center = view.center
         indicator.backgroundColor = .black
         view.addSubview(indicator)
-        if self.user.getCustomerGender() == "FEMALE" {
+        if UserManager.shared.user?.customerGender == "FEMALE" {
             segment = 1
         }
-        self.name.text = self.user.getCustomerName()
-        self.surname.text = self.user.getCustomerSurname()
-        self.mobilePhone.text = self.user.getCustomerPhoneNumber()
+        self.name.text = UserManager.shared.user?.customerName
+        self.surname.text = UserManager.shared.user?.customerSurname
+        self.mobilePhone.text = UserManager.shared.user?.customerPhoneNumber
         self.genderControl.selectedSegmentIndex = segment
-        self.dateOfBirth.text = self.user.getCustomerBirthday()
-        self.eMail.text = self.user.getCustomerEmail()
-        self.userNameLabel.text = (self.user.getCustomerName())+" "+(self.user.getCustomerSurname())
-        self.indicator.stopAnimating()
+        self.dateOfBirth.text = UserManager.shared.user?.customerBirthday
+        self.eMail.text = UserManager.shared.user?.customerEmail
+        self.userNameLabel.text = (UserManager.shared.user?.customerName ?? "")+" "+(UserManager.shared.user?.customerSurname ?? "")
+        indicator.stopAnimating()
     }
     
-    func getCustomerInfo(completion: @escaping () -> Void) {
-        APIClient.getCustomerData() {   [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let userData):
-                    self?.user = User(customer: userData, product: [])
-                    self?.fillCustomerInfo()
-                    completion()
-                case .failure(let error):
-                    print("Error fetching user data: \(error.localizedDescription)")
-                }
-            }
-        }
-    }
+    
     
     func showAlertWithMessage(_ message: String) {
         let alertController = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
@@ -200,30 +185,15 @@ class EditProfileViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    func saveCustomerInfo() {
-        setUserInfo()
-        
-        APIClient.updateCustomerData(name: self.user.getCustomerName(), surname: self.user.getCustomerSurname(), gender: self.user.getCustomerGender(), birthday: self.user.getCustomerBirthday(), email: self.user.getCustomerEmail()) { [weak self] success, errorMessage in
-            DispatchQueue.main.async {
-                if success {
-                    self?.showAlertWithMessage("User information updated")
-                } else {
-                    print(errorMessage ?? "")
-                }
-                self?.fillCustomerInfo()
-            }
-        }
-    }
-    
     func setUserInfo(){
         indicator.startAnimating()
         indicator.color = .red
         indicator.center = view.center
         indicator.backgroundColor = .black
-        self.user.setCustomerName(name: name.text!)
-        self.user.setCustomerSurname(surname: surname.text!)
-        self.user.setCustomerBirthday(birthday: dateOfBirth.text!)
-        self.user.setCustomerGender(gender: (genderControl.titleForSegment(at: genderControl.selectedSegmentIndex)?.uppercased())!)
-        self.user.setCustomerEmail(email: eMail.text!)
+        UserManager.shared.user?.customerName = name.text!
+        UserManager.shared.user?.customerSurname = surname.text!
+        UserManager.shared.user?.customerBirthday = dateOfBirth.text!
+        UserManager.shared.user?.customerGender = (genderControl.titleForSegment(at: genderControl.selectedSegmentIndex)?.uppercased())!
+        UserManager.shared.user?.customerEmail = eMail.text!
     }
 }

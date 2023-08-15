@@ -9,9 +9,6 @@ import UIKit
 
 class ProfileViiewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     let indicator = UIActivityIndicatorView(style: .large)
-    var haveBrific = false
-    var productID: String?
-    let currentUser = EditProfileViewController()
     
     @IBOutlet weak var profileContainerView: UIView!
     
@@ -37,9 +34,23 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        currentUser.getCustomerInfo() {
-            self.nameLabel.text = self.currentUser.user.getCustomerName()
+        UserManager.shared.initializeCustomerData() { isProcessed in
+            switch isProcessed {
+            case true:
+                UserManager.shared.initializeCustomerProducts() { isProcessed in
+                    switch isProcessed {
+                    case true:
+                        return
+                    case false:
+                        print("err")
+                    }
+                }
+                self.nameLabel.text = (UserManager.shared.user?.customerName ?? "") + " " + (UserManager.shared.user?.customerSurname ?? "")
+            case false:
+                print("error")
+            }
         }
+        
         setupUI()
     }
     
@@ -123,8 +134,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
             styleNavBarWithTitle("My Brific")
             let addedMyBrificViewController = AddedMyBrificViewController(nibName: "AddedMyBrificViewController", bundle: nil)
             let myBrificViewController = MyBrificViewController(nibName: "MyBrificViewController", bundle: nil)
-            if haveBrific {
-                addedMyBrificViewController.productID = self.productID
+            if ((UserManager.shared.user?.customerProducts.first) != nil) {
                 navigationController?.pushViewController(addedMyBrificViewController, animated: true)
             } else {
                 navigationController?.pushViewController(myBrificViewController, animated: true)
@@ -141,21 +151,6 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController?.isNavigationBarHidden = false
-    }
-    
-    func fillUserProduct() {
-        APIClient.getCustomerProduct() { [weak self] result in
-            switch result {
-            case .success(let userData):
-                DispatchQueue.main.async {
-                    self?.currentUser.user.setProducts(product: userData)
-                }
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    print("Error fetching user data: \(error.localizedDescription)")
-                }
-            }
-        }
     }
     
     func styleNavBarWithTitle(_ title:String){

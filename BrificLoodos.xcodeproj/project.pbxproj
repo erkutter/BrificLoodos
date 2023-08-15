@@ -49,6 +49,8 @@
 		9AADBB382A83BC370002877B /* BrificUnitsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */; };
 		9ACD6DBA2A8A19D40058AF08 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6DB92A8A19D40058AF08 /* ProductModel.swift */; };
 		9ACD6DBD2A8A459D0058AF08 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6DBC2A8A459D0058AF08 /* User.swift */; };
+		9ACD6DC02A8B67090058AF08 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6DBF2A8B67090058AF08 /* UserRepository.swift */; };
+		9ACD6DC32A8B72590058AF08 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACD6DC22A8B72590058AF08 /* UserManager.swift */; };
 		9AD86C9B2A8503A1009676AA /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86C992A8503A1009676AA /* ButtonCollectionViewCell.swift */; };
 		9AD86C9C2A8503A1009676AA /* ButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD86C9A2A8503A1009676AA /* ButtonCollectionViewCell.xib */; };
 		9AD86CA02A8516B0009676AA /* FooterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD86C9E2A8516B0009676AA /* FooterCollectionViewCell.swift */; };
@@ -108,6 +110,8 @@
 		9AADBB362A83BC370002877B /* BrificUnitsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrificUnitsCollectionViewCell.xib; sourceTree = "<group>"; };
 		9ACD6DB92A8A19D40058AF08 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		9ACD6DBC2A8A459D0058AF08 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9ACD6DBF2A8B67090058AF08 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		9ACD6DC22A8B72590058AF08 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		9AD86C992A8503A1009676AA /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		9AD86C9A2A8503A1009676AA /* ButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		9AD86C9E2A8516B0009676AA /* FooterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 		9A4E6F512A7832F4003DF923 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9ACD6DC12A8B72500058AF08 /* Manager */,
 				9ACD6DBB2A8A45700058AF08 /* User */,
 				9AFE171C2A863AAB00F60F85 /* Model */,
 				9A8C5F3A2A7D2E3A001E5818 /* Service */,
@@ -353,6 +358,7 @@
 		9A8C5F3A2A7D2E3A001E5818 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				9ACD6DBE2A8B66EE0058AF08 /* Repo */,
 				9AFE171A2A86364400F60F85 /* Constants.swift */,
 				9AFE17182A86212600F60F85 /* APIRouter.swift */,
 				9AFE171F2A863B2C00F60F85 /* APIClient.swift */,
@@ -454,6 +460,22 @@
 				9ACD6DBC2A8A459D0058AF08 /* User.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		9ACD6DBE2A8B66EE0058AF08 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				9ACD6DBF2A8B67090058AF08 /* UserRepository.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		9ACD6DC12A8B72500058AF08 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9ACD6DC22A8B72590058AF08 /* UserManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		9AD86C982A850386009676AA /* CollectionViewButton */ = {
@@ -631,6 +653,7 @@
 				9A4E6F6F2A783D6A003DF923 /* ProfileViiewController.swift in Sources */,
 				9AFE17192A86212600F60F85 /* APIRouter.swift in Sources */,
 				9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */,
+				9ACD6DC02A8B67090058AF08 /* UserRepository.swift in Sources */,
 				9AADBB2E2A83A93E0002877B /* DrivingModeCollectionViewCell.swift in Sources */,
 				9A4E6F3E2A78300F003DF923 /* AppDelegate.swift in Sources */,
 				9AFE171B2A86364400F60F85 /* Constants.swift in Sources */,
@@ -643,6 +666,7 @@
 				9AD86C9B2A8503A1009676AA /* ButtonCollectionViewCell.swift in Sources */,
 				9AFE17202A863B2C00F60F85 /* APIClient.swift in Sources */,
 				9AFE17222A86684300F60F85 /* CustomerModel.swift in Sources */,
+				9ACD6DC32A8B72590058AF08 /* UserManager.swift in Sources */,
 				9A9D89692A7991A300C69BD8 /* TabBarViewController.swift in Sources */,
 				9ACD6DBA2A8A19D40058AF08 /* ProductModel.swift in Sources */,
 				9A4E6F402A78300F003DF923 /* SceneDelegate.swift in Sources */,
