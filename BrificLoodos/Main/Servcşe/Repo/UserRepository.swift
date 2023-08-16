@@ -34,20 +34,4 @@ class UserRepository {
             }
         }
     }
-    
-    
-    /*func saveCustomerInfo() {
-     setUserInfo()
-     
-     APIClient.updateCustomerData(name: self.user.getCustomerName(), surname: self.user.getCustomerSurname(), gender: self.user.getCustomerGender(), birthday: self.user.getCustomerBirthday(), email: self.user.getCustomerEmail()) { [weak self] success, errorMessage in
-     DispatchQueue.main.async {
-     if success {
-     self?.showAlertWithMessage("User information updated")
-     } else {
-     print(errorMessage ?? "")
-     }
-     self?.fillCustomerInfo()
-     }
-     }
-     }*/
 }

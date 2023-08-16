@@ -8,7 +8,6 @@
 import UIKit
 
 class AddedMyBrificViewController: UIViewController {
-    var productID: String?
     
     @IBOutlet weak var aliasLabel: UILabel!
     @IBOutlet weak var brificName: UITextField!
@@ -157,7 +156,7 @@ extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionVi
     }
     
     @objc func removeButtonPressed(sender: UIButton) {
-        APIClient.deleteCustomerProduct(id: (productID)!) { (success, errorMessage) in
+        APIClient.deleteCustomerProduct(id: (UserManager.shared.user?.customerProducts.first?.id)!) { (success, errorMessage) in
             switch success {
             case true:
                 DispatchQueue.main.async {

@@ -118,9 +118,9 @@ class EditProfileViewController: UIViewController {
         self.tabBarController?.tabBar.isHidden = false
     }
     
-    /*  @IBAction func saveChangesTapped(_ sender: Any) {
-     saveCustomerInfo()
-     }*/
+    @IBAction func saveChangesTapped(_ sender: Any) {
+        saveCustomerInfo()
+    }
     
     func labelCustomization(_ label:UILabel) {
         label.font = UIFont(name: "Poppins-Regular", size: 12)
@@ -183,6 +183,25 @@ class EditProfileViewController: UIViewController {
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    func saveCustomerInfo() {
+        setUserInfo()
+        APIClient.updateCustomerData(
+            name: UserManager.shared.user!.customerName,
+            surname: UserManager.shared.user!.customerSurname,
+            gender: UserManager.shared.user!.customerGender,
+            birthday: UserManager.shared.user!.customerBirthday,
+            email: UserManager.shared.user!.customerEmail) { [weak self] success, errorMessage in
+                DispatchQueue.main.async {
+                    if success {
+                        self?.showAlertWithMessage("User information updated")
+                    } else {
+                        print(errorMessage ?? "")
+                    }
+                    self?.fillCustomerInfo()
+                }
+            }
     }
     
     func setUserInfo(){

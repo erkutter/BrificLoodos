@@ -50,7 +50,6 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
                 print("error")
             }
         }
-        
         setupUI()
     }
     
@@ -145,6 +144,7 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         self.navigationController?.isNavigationBarHidden = true
     }
     
