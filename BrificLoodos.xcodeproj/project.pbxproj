@@ -28,6 +28,8 @@
 		9A61B6F92A84C8AF00A55281 /* LightButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A61B6F72A84C8AE00A55281 /* LightButtonCollectionViewCell.xib */; };
 		9A61B6FD2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A61B6FB2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift */; };
 		9A61B6FE2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A61B6FC2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib */; };
+		9A6715062A8CBDD700EFC9CB /* BrificLoodosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6715052A8CBDD700EFC9CB /* BrificLoodosTests.swift */; };
+		9A67150D2A8CC70500EFC9CB /* EmailValidateTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67150C2A8CC70500EFC9CB /* EmailValidateTestCase.swift */; };
 		9A7003FE2A80C6BB00FC2094 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7003FD2A80C6BB00FC2094 /* Security.framework */; };
 		9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */; };
 		9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004072A81308A00FC2094 /* MyBrificViewController.swift */; };
@@ -63,6 +65,16 @@
 		9AFE17222A86684300F60F85 /* CustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFE17212A86684300F60F85 /* CustomerModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9A6715072A8CBDD700EFC9CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A4E6F322A78300F003DF923 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A4E6F392A78300F003DF923;
+			remoteInfo = BrificLoodos;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5AEB66091F350C1AD5486BB6 /* Pods_BrificLoodos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrificLoodos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		634ED45B926F053455BEF2C0 /* Pods-BrificLoodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrificLoodos.release.xcconfig"; path = "Target Support Files/Pods-BrificLoodos/Pods-BrificLoodos.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +101,9 @@
 		9A61B6F72A84C8AE00A55281 /* LightButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LightButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A61B6FB2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		9A61B6FC2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A6715032A8CBDD700EFC9CB /* BrificLoodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrificLoodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6715052A8CBDD700EFC9CB /* BrificLoodosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrificLoodosTests.swift; sourceTree = "<group>"; };
+		9A67150C2A8CC70500EFC9CB /* EmailValidateTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidateTestCase.swift; sourceTree = "<group>"; };
 		9A7003FD2A80C6BB00FC2094 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
 		9A7004072A81308A00FC2094 /* MyBrificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBrificViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +146,13 @@
 			files = (
 				9A7003FE2A80C6BB00FC2094 /* Security.framework in Frameworks */,
 				0B001C22901BE9AEFAB78120 /* Pods_BrificLoodos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6715002A8CBDD700EFC9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				9A4E6F3C2A78300F003DF923 /* BrificLoodos */,
+				9A6715042A8CBDD700EFC9CB /* BrificLoodosTests */,
 				9A4E6F3B2A78300F003DF923 /* Products */,
 				17D0985C04BB3EFCB359D89E /* Pods */,
 				909FB3625505641043737BCF /* Frameworks */,
@@ -187,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				9A4E6F3A2A78300F003DF923 /* BrificLoodos.app */,
+				9A6715032A8CBDD700EFC9CB /* BrificLoodosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -321,6 +345,15 @@
 				9A61B6FC2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib */,
 			);
 			path = CollectionTableCells;
+			sourceTree = "<group>";
+		};
+		9A6715042A8CBDD700EFC9CB /* BrificLoodosTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A6715052A8CBDD700EFC9CB /* BrificLoodosTests.swift */,
+				9A67150C2A8CC70500EFC9CB /* EmailValidateTestCase.swift */,
+			);
+			path = BrificLoodosTests;
 			sourceTree = "<group>";
 		};
 		9A7003FF2A80C6DE00FC2094 /* Auth */ = {
@@ -536,6 +569,24 @@
 			productReference = 9A4E6F3A2A78300F003DF923 /* BrificLoodos.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9A6715022A8CBDD700EFC9CB /* BrificLoodosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A67150B2A8CBDD700EFC9CB /* Build configuration list for PBXNativeTarget "BrificLoodosTests" */;
+			buildPhases = (
+				9A6714FF2A8CBDD700EFC9CB /* Sources */,
+				9A6715002A8CBDD700EFC9CB /* Frameworks */,
+				9A6715012A8CBDD700EFC9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A6715082A8CBDD700EFC9CB /* PBXTargetDependency */,
+			);
+			name = BrificLoodosTests;
+			productName = BrificLoodosTests;
+			productReference = 9A6715032A8CBDD700EFC9CB /* BrificLoodosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -548,6 +599,10 @@
 				TargetAttributes = {
 					9A4E6F392A78300F003DF923 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					9A6715022A8CBDD700EFC9CB = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 9A4E6F392A78300F003DF923;
 					};
 				};
 			};
@@ -565,6 +620,7 @@
 			projectRoot = "";
 			targets = (
 				9A4E6F392A78300F003DF923 /* BrificLoodos */,
+				9A6715022A8CBDD700EFC9CB /* BrificLoodosTests */,
 			);
 		};
 /* End PBXProject section */
@@ -596,6 +652,13 @@
 				9AD86CA12A8516B0009676AA /* FooterCollectionViewCell.xib in Resources */,
 				9A9D89802A7AE0E500C69BD8 /* Poppins-Medium.ttf in Resources */,
 				9A61B6F92A84C8AF00A55281 /* LightButtonCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A6715012A8CBDD700EFC9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,7 +744,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A6714FF2A8CBDD700EFC9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A67150D2A8CC70500EFC9CB /* EmailValidateTestCase.swift in Sources */,
+				9A6715062A8CBDD700EFC9CB /* BrificLoodosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A6715082A8CBDD700EFC9CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A4E6F392A78300F003DF923 /* BrificLoodos */;
+			targetProxy = 9A6715072A8CBDD700EFC9CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9A4E6F482A783013003DF923 /* LaunchScreen.storyboard */ = {
@@ -875,6 +955,40 @@
 			};
 			name = Release;
 		};
+		9A6715092A8CBDD700EFC9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkutter.BrificLoodosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrificLoodos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrificLoodos";
+			};
+			name = Debug;
+		};
+		9A67150A2A8CBDD700EFC9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.erkutter.BrificLoodosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BrificLoodos.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BrificLoodos";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -892,6 +1006,15 @@
 			buildConfigurations = (
 				9A4E6F4F2A783013003DF923 /* Debug */,
 				9A4E6F502A783013003DF923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A67150B2A8CBDD700EFC9CB /* Build configuration list for PBXNativeTarget "BrificLoodosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A6715092A8CBDD700EFC9CB /* Debug */,
+				9A67150A2A8CBDD700EFC9CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

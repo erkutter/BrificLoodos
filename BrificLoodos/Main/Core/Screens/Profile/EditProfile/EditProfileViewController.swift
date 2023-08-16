@@ -187,6 +187,12 @@ class EditProfileViewController: UIViewController {
     
     func saveCustomerInfo() {
         setUserInfo()
+        
+        if !EmailValidator().isValidEmail(UserManager.shared.user!.customerEmail) {
+            showAlertWithMessage("Invalid email address")
+            return
+        }
+        
         APIClient.updateCustomerData(
             name: UserManager.shared.user!.customerName,
             surname: UserManager.shared.user!.customerSurname,
@@ -204,7 +210,7 @@ class EditProfileViewController: UIViewController {
             }
     }
     
-    func setUserInfo(){
+    func setUserInfo() {
         indicator.startAnimating()
         indicator.color = .red
         indicator.center = view.center
@@ -214,5 +220,14 @@ class EditProfileViewController: UIViewController {
         UserManager.shared.user?.customerBirthday = dateOfBirth.text!
         UserManager.shared.user?.customerGender = (genderControl.titleForSegment(at: genderControl.selectedSegmentIndex)?.uppercased())!
         UserManager.shared.user?.customerEmail = eMail.text!
+        indicator.stopAnimating()
+    }
+    
+    struct EmailValidator {
+        func isValidEmail(_ email: String) -> Bool {
+            let emailRegex = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+            let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegex)
+            return emailPredicate.evaluate(with: email)
+        }
     }
 }
