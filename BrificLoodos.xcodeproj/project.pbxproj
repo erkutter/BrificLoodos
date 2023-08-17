@@ -29,7 +29,8 @@
 		9A61B6FD2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A61B6FB2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.swift */; };
 		9A61B6FE2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A61B6FC2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib */; };
 		9A6715062A8CBDD700EFC9CB /* BrificLoodosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6715052A8CBDD700EFC9CB /* BrificLoodosTests.swift */; };
-		9A67150D2A8CC70500EFC9CB /* EmailValidateTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67150C2A8CC70500EFC9CB /* EmailValidateTestCase.swift */; };
+		9A67150D2A8CC70500EFC9CB /* EmailValidatorExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67150C2A8CC70500EFC9CB /* EmailValidatorExtensionTest.swift */; };
+		9A67150F2A8CEBDD00EFC9CB /* EmailValidatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A67150E2A8CEBDC00EFC9CB /* EmailValidatorExtension.swift */; };
 		9A7003FE2A80C6BB00FC2094 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A7003FD2A80C6BB00FC2094 /* Security.framework */; };
 		9A7004042A8114FA00FC2094 /* KeyboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */; };
 		9A7004092A81308A00FC2094 /* MyBrificViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7004072A81308A00FC2094 /* MyBrificViewController.swift */; };
@@ -103,7 +104,8 @@
 		9A61B6FC2A84CFB700A55281 /* CollectionTableCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A6715032A8CBDD700EFC9CB /* BrificLoodosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrificLoodosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A6715052A8CBDD700EFC9CB /* BrificLoodosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrificLoodosTests.swift; sourceTree = "<group>"; };
-		9A67150C2A8CC70500EFC9CB /* EmailValidateTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidateTestCase.swift; sourceTree = "<group>"; };
+		9A67150C2A8CC70500EFC9CB /* EmailValidatorExtensionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorExtensionTest.swift; sourceTree = "<group>"; };
+		9A67150E2A8CEBDC00EFC9CB /* EmailValidatorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidatorExtension.swift; sourceTree = "<group>"; };
 		9A7003FD2A80C6BB00FC2094 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExtension.swift; sourceTree = "<group>"; };
 		9A7004072A81308A00FC2094 /* MyBrificViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBrificViewController.swift; sourceTree = "<group>"; };
@@ -351,7 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6715052A8CBDD700EFC9CB /* BrificLoodosTests.swift */,
-				9A67150C2A8CC70500EFC9CB /* EmailValidateTestCase.swift */,
+				9A67150C2A8CC70500EFC9CB /* EmailValidatorExtensionTest.swift */,
 			);
 			path = BrificLoodosTests;
 			sourceTree = "<group>";
@@ -367,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				9A7004032A8114FA00FC2094 /* KeyboardExtension.swift */,
+				9A67150E2A8CEBDC00EFC9CB /* EmailValidatorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -712,6 +715,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9D89892A7B870D00C69BD8 /* EditProfileViewController.swift in Sources */,
+				9A67150F2A8CEBDD00EFC9CB /* EmailValidatorExtension.swift in Sources */,
 				9AD86CA02A8516B0009676AA /* FooterCollectionViewCell.swift in Sources */,
 				9A4E6F6F2A783D6A003DF923 /* ProfileViiewController.swift in Sources */,
 				9AFE17192A86212600F60F85 /* APIRouter.swift in Sources */,
@@ -748,7 +752,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A67150D2A8CC70500EFC9CB /* EmailValidateTestCase.swift in Sources */,
+				9A67150D2A8CC70500EFC9CB /* EmailValidatorExtensionTest.swift in Sources */,
 				9A6715062A8CBDD700EFC9CB /* BrificLoodosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

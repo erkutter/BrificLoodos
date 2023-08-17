@@ -133,7 +133,6 @@ extension AddedMyBrificViewController: UICollectionViewDataSource,UICollectionVi
         } else if indexPath.item == 9 {
             cellHeight = 48
         }
-        
         return CGSize(width: cellWidth, height: cellHeight)
     }
     

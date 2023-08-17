@@ -8,6 +8,7 @@
 import UIKit
 
 class ProfileViiewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     let indicator = UIActivityIndicatorView(style: .large)
     
     @IBOutlet weak var profileContainerView: UIView!
@@ -87,7 +88,6 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
         let editProfileViewController = EditProfileViewController(nibName: "EditProfileViewController", bundle: nil)
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.pushViewController(editProfileViewController, animated: true)
-        
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -138,13 +138,11 @@ class ProfileViiewController: UIViewController, UITableViewDataSource, UITableVi
             } else {
                 navigationController?.pushViewController(myBrificViewController, animated: true)
             }
-            
         }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         self.navigationController?.isNavigationBarHidden = true
     }
     

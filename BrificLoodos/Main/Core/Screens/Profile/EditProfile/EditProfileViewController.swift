@@ -55,7 +55,6 @@ class EditProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImage: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
@@ -157,15 +156,16 @@ class EditProfileViewController: UIViewController {
     }
     
     func fillCustomerInfo() {
+        //        indicator.startAnimating()
+        //        indicator.color = .red
+        //        indicator.center = view.center
+        //        indicator.backgroundColor = .black
+        //        view.addSubview(indicator)
         var segment: Int = 0
-        indicator.startAnimating()
-        indicator.color = .red
-        indicator.center = view.center
-        indicator.backgroundColor = .black
-        view.addSubview(indicator)
         if UserManager.shared.user?.customerGender == "FEMALE" {
             segment = 1
         }
+        
         self.name.text = UserManager.shared.user?.customerName
         self.surname.text = UserManager.shared.user?.customerSurname
         self.mobilePhone.text = UserManager.shared.user?.customerPhoneNumber
@@ -173,10 +173,8 @@ class EditProfileViewController: UIViewController {
         self.dateOfBirth.text = UserManager.shared.user?.customerBirthday
         self.eMail.text = UserManager.shared.user?.customerEmail
         self.userNameLabel.text = (UserManager.shared.user?.customerName ?? "")+" "+(UserManager.shared.user?.customerSurname ?? "")
-        indicator.stopAnimating()
+        //        indicator.stopAnimating()
     }
-    
-    
     
     func showAlertWithMessage(_ message: String) {
         let alertController = UIAlertController(title: "Success", message: message, preferredStyle: .alert)
@@ -186,9 +184,14 @@ class EditProfileViewController: UIViewController {
     }
     
     func saveCustomerInfo() {
-        setUserInfo()
+        //fill user info
+        UserManager.shared.user?.customerName = name.text!
+        UserManager.shared.user?.customerSurname = surname.text!
+        UserManager.shared.user?.customerBirthday = dateOfBirth.text!
+        UserManager.shared.user?.customerGender = (genderControl.titleForSegment(at: genderControl.selectedSegmentIndex)?.uppercased())!
+        UserManager.shared.user?.customerEmail = eMail.text!
         
-        if !EmailValidator().isValidEmail(UserManager.shared.user!.customerEmail) {
+        if !UserManager.shared.user!.customerEmail.isValidEmail() {
             showAlertWithMessage("Invalid email address")
             return
         }
@@ -208,26 +211,5 @@ class EditProfileViewController: UIViewController {
                     self?.fillCustomerInfo()
                 }
             }
-    }
-    
-    func setUserInfo() {
-        indicator.startAnimating()
-        indicator.color = .red
-        indicator.center = view.center
-        indicator.backgroundColor = .black
-        UserManager.shared.user?.customerName = name.text!
-        UserManager.shared.user?.customerSurname = surname.text!
-        UserManager.shared.user?.customerBirthday = dateOfBirth.text!
-        UserManager.shared.user?.customerGender = (genderControl.titleForSegment(at: genderControl.selectedSegmentIndex)?.uppercased())!
-        UserManager.shared.user?.customerEmail = eMail.text!
-        indicator.stopAnimating()
-    }
-    
-    struct EmailValidator {
-        func isValidEmail(_ email: String) -> Bool {
-            let emailRegex = "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
-            let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailRegex)
-            return emailPredicate.evaluate(with: email)
-        }
     }
 }
