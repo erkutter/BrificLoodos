@@ -1,19 +1,23 @@
-//
-//  HomeViewController.swift
-//  BrificLoodos
-//
-//  Created by Erkut Ter on 31.07.2023.
-//
-
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UIScrollViewDelegate {
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(red: 0.94, green: 0.95, blue: 0.96, alpha: 1)
-
     }
 
 
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+           for view in scrollView.subviews {
+               let phase = abs(view.frame.origin.x - scrollView.contentOffset.x) / scrollView.frame.width
+               let scale = 1 - min(max(phase, 0.0), 0.5)
+               view.transform = CGAffineTransform(scaleX: scale, y: scale)
+               view.alpha = scale
+           }
+       }
 }
+
+
+

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,23 +17,8 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnX-z5-cyh">
-                    <rect key="frame" x="172" y="414" width="48" height="24"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-            </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <constraints>
-                <constraint firstItem="lnX-z5-cyh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="355" id="6mB-GM-ghy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lnX-z5-cyh" secondAttribute="bottom" constant="380" id="7fs-Ff-RJU"/>
-                <constraint firstItem="lnX-z5-cyh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="172" id="EAx-uq-Kst"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lnX-z5-cyh" secondAttribute="trailing" constant="173" id="Jqb-u5-ayE"/>
-            </constraints>
-            <point key="canvasLocation" x="71" y="-11"/>
+            <point key="canvasLocation" x="70.992366412213741" y="-11.267605633802818"/>
         </view>
     </objects>
     <resources>
